@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Magasin PILAF</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/use_case_creer.css">
+	</head>
+	<body>
+		<header>
+			<div class="blocsSepares" style="align-items:center">
+				<div id="titre_site">
+					<h1>Le Magasin PILAF </h1>
+					<span>&copy;</span>
+				</div>
+
+				<div class="blocsColles">
+					<a href="../Accueil.html" style="padding-right:40px"><img src="../../images/picto_aide.png" alt="aide" /></a>
+					<div class="blocsVerticaux">
+						<p id="identifiant">Frédéric PILAF</p>
+						<p><a href="../../index.html">Se Déconnecter</a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<nav>
+			<ul id="nav_liste">
+				<li class="partie_site">
+					<h2><a href="">Caisse</a></h2>
+					<ul class="sous">
+						<li><a href="../Caisse/creer_client.html">Créer Client</a></li>
+						<li><a href="../Caisse/enregistrer_une_carte_de_fidelite.html">Enregistrer une carte de fidélité</a></li>
+						<li><a href="../Caisse/enregistrer_une_vente.html">Enregistrer une vente</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Employé</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Informations Employé</h3>
+							<ul>
+								<li><a href="../Employé/consulter_employe.html">Consulter les informations</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Horaires Employé</h3>
+							<ul>
+								<li><a href="../Employé/enregistrer_un_horaire_de_travail.html">Enregistrer horaires de travail</a></li>
+								<li><a href="../Employé/consulter_un_horaire_de_travail.html">Consulter horaires de travail</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Fournisseur</a></h2>
+					<ul class="sous">
+						<li><a href="../Fournisseur/creer_fournisseur.html">Créer fournisseur</a></li>
+						<li><a href="../Fournisseur/consulter_fournisseur.html">Consulter fournisseur</a></li>
+						<li>
+							<h3>Catalogue fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_catalogue_fournisseur_recherche.html">Créer catalogue fourniseur</a></li>
+								<li><a href="../Fournisseur/consulter_catalogue_fournisseur_recherche.html">Consulter catalogue fournisseur</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Commande Fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_commande.html">Créer une commande</a></li>
+								<li><a href="../Fournisseur/consulter_commande.html">Consulter une commande</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Magasin</a></h2>
+					<ul class="sous">
+						<li><a href="../Magasin/receptionner_une_livraison.html">Réceptionner une livraison</a></li>
+						<li><a href="../Magasin/consulter_facture.html">Consulter les factures</a></li>
+						<li>
+							<h3>Virement</h3>
+							<ul>
+								<li><a href="../Magasin/payer_une_facture_par_virement_automatique.html">Payer une facture par virement automatique</a></li>
+								<li><a href="../Magasin/consulter_les_virements.html">Consulter les virements</a></li>
+							</ul>
+						</li>
+						<li><a href="../Magasin/consulter_les_statistiques.html">Consulter les statistiques</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Produit et Stocks</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Produit</h3>
+							<ul>
+								<li><a href="../Produit/creer_produit.html">Créer un produit</a></li>
+								<li><a href="../Produit/consulter_produit_liste.html">Consulter un produit</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Stocks</h3>
+							<ul>
+								<li><a href="../Produit/enregistrer_les_mouvements_de_stocks.html">Enregistrer un mouvement de stock</a></li>
+								<li><a href="../Produit/consulter_les_stocks_par_critere.html">Consulter les stocks par critères</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<aside id="nav_fonctionnalite">
+				<h2>Fournisseur</h2>
+				<ul>
+					<li><a href="../Fournisseur/creer_fournisseur.html">Créer un fournisseur</a></li>
+					<li><a href="../Fournisseur/consulter_fournisseur.html">Consulter un fournisseur</a></li>
+					<li><a href="../Fournisseur/creer_catalogue_fournisseur_recherche.html">Créer un catalogue fournisseur</a></li>
+					<li><a href="../Fournisseur/consulter_catalogue_fournisseur_recherche.html">Consulter un catalogue fournisseur</a></li>
+					<li><a href="../Fournisseur/creer_commande.html">Créer une commande fournisseur</a></li>
+					<li><a href="../Fournisseur/consulter_commande.html">Consulter une commande fournisseur</a></li>
+				</ul>
+			</aside>
+
+
+			<section id="use_case">
+				<h2>Créer Catalogue Fournisseur</h2>
+
+				<form action="Creer_Catalogue_Fournisseur.html">
+					<article>
+						<h3>Choix du fournisseur</h3>
+
+						<div class="champsText moitie" style="margin : auto">
+							<label for="nomFournisseur">Nom du Fournisseur</label>
+							<select name="nomFournisseur" id="nomFournisseur">
+								<option value="founisseur_1">Les Pommes du Matin (Référence : A7G89P) </option>
+								<option value="founisseur_2">Bio&Local (Référence : BGT451)</option>
+								<option value="founisseu_3">Le Fournisseur Bio (Référence : TRF874)</option>
+								<option value="founisseu_4">Un Autre Fournisseur (Référebce : AZER45)</option>
+							</select>
+						</div>
+					</article>
+
+					<div class="valider">
+						<button>Valider</button>
+					</div>
+
+				</form>
+			</section>
+
+
+			<footer>
+			</footer>
+
+		</main>
+
+	</body>
+</html>

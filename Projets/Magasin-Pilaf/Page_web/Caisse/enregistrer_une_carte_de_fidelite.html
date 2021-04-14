@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Magasin PILAF</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/use_case_creer.css">
+	</head>
+	<body>
+		<header>
+			<div class="blocsSepares" style="align-items:center">
+				<div id="titre_site">
+					<h1>Le Magasin PILAF </h1>
+					<span>&copy;</span>
+				</div>
+
+				<div class="blocsColles">
+					<a href="../Accueil.html" style="padding-right:40px"><img src="../../images/picto_aide.png" alt="aide" /></a>
+					<div class="blocsVerticaux">
+						<p id="identifiant">Frédéric PILAF</p>
+						<p><a href="../../index.html">Se Déconnecter</a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<nav>
+			<ul id="nav_liste">
+				<li class="partie_site">
+					<h2><a href="">Caisse</a></h2>
+					<ul class="sous">
+						<li><a href="../Caisse/creer_client.html">Créer Client</a></li>
+						<li><a href="../Caisse/enregistrer_une_carte_de_fidelite.html">Enregistrer une carte de fidélité</a></li>
+						<li><a href="../Caisse/enregistrer_une_vente.html">Enregistrer une vente</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Employé</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Informations Employé</h3>
+							<ul>
+								<li><a href="../Employé/consulter_employe.html">Consulter les informations</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Horaires Employé</h3>
+							<ul>
+								<li><a href="../Employé/enregistrer_un_horaire_de_travail.html">Enregistrer horaires de travail</a></li>
+								<li><a href="../Employé/consulter_un_horaire_de_travail.html">Consulter horaires de travail</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Fournisseur</a></h2>
+					<ul class="sous">
+						<li><a href="../Fournisseur/creer_fournisseur.html">Créer fournisseur</a></li>
+						<li><a href="../Fournisseur/consulter_fournisseur.html">Consulter fournisseur</a></li>
+						<li>
+							<h3>Catalogue fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_catalogue_fournisseur_recherche.html">Créer catalogue fourniseur</a></li>
+								<li><a href="../Fournisseur/consulter_catalogue_fournisseur_recherche.html">Consulter catalogue fournisseur</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Commande Fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_commande.html">Créer une commande</a></li>
+								<li><a href="../Fournisseur/consulter_commande.html">Consulter une commande</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Magasin</a></h2>
+					<ul class="sous">
+						<li><a href="../Magasin/receptionner_une_livraison.html">Réceptionner une livraison</a></li>
+						<li><a href="../Magasin/consulter_facture.html">Consulter les factures</a></li>
+						<li>
+							<h3>Virement</h3>
+							<ul>
+								<li><a href="../Magasin/payer_une_facture_par_virement_automatique.html">Payer une facture par virement automatique</a></li>
+								<li><a href="../Magasin/consulter_les_virements.html">Consulter les virements</a></li>
+							</ul>
+						</li>
+						<li><a href="../Magasin/consulter_les_statistiques.html">Consulter les statistiques</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Produit et Stocks</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Produit</h3>
+							<ul>
+								<li><a href="../Produit/creer_produit.html">Créer un produit</a></li>
+								<li><a href="../Produit/consulter_produit_liste.html">Consulter un produit</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Stocks</h3>
+							<ul>
+								<li><a href="../Produit/enregistrer_les_mouvements_de_stocks.html">Enregistrer un mouvement de stock</a></li>
+								<li><a href="../Produit/consulter_les_stocks_par_critere.html">Consulter les stocks par critères</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+			
+		<main>
+			<aside id="nav_fonctionnalite">
+				<h2>Caisse</h2>
+				<ul>
+					<li><a href="../Caisse/creer_client.html">Créer Client</a></li>
+					<li><a href="../Caisse/enregistrer_une_carte_de_fidelite.html">Enregistrer une carte de fidélité</a></li>
+					<li><a href="../Caisse/enregistrer_une_vente.html">Enregistrer une  vente</a></li>
+				</ul>
+			</aside>
+		
+		
+			<section id="use_case">
+				<h2>Enregistrer une carte de fidélité</h2>
+				
+				<form action="enregistrer_une_vente.html">
+					<article>
+
+						<div class="blocsColles">
+
+							<div class="champsText moitie">
+								<label for="champsID">Recherche ID Carte</label>
+								<input type="text" id="champsID" name="champsID" />
+							</div>
+
+							<div class="champsText moitie">
+								<label for="champsNomPrenom">Recherche Nom/Prénom</label>
+								<input type="text" id="champsNomPrenom" name="champsNomPrenom" />
+							</div>
+
+						</div>
+
+					</article>
+
+					<article>
+						<div style="text-align:center;">
+							<input type="checkbox" id="montreCache" class="sesame" name="sesame" />
+							<label for="montreCache" class="labelSesame">Rechercher</label>
+
+							<div class="partieCache" style="padding-top:2%;">
+								<table class="tableau_use_case">
+									<thead>
+										<tr>
+											<th class="case_vide"></th>
+											<th>Nom</th>
+											<th>Prénom</th>
+											<th>Tél</th>
+											<th>Date d'inscription</th>
+											<th>ID Carte</th>
+										<tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="case_vide"><input type="checkbox" /></td>
+											<td>Joestar</td>
+											<td>Joseph</td>
+											<td>06 55 55 55 55</td>
+											<td>20/12/18</td>
+											<td>5B21AAC</td>
+										</tr>
+										<tr>
+											<td class="case_vide"><input type="checkbox" /></td>
+											<td>Simpson</td>
+											<td>Lisa</td>
+											<td>07 54 54 54 54</td>
+											<td>14/02/20</td>
+											<td>A2DB54D</td>
+										</tr>
+										<tr>
+											<td class="case_vide"><input type="checkbox" /></td>
+											<td>Sparrow</td>
+											<td>Jack</td>
+											<td>06 66 66 66 66</td>
+											<td>29/02/16</td>
+											<td>11AB21C</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<div class="valider">
+									<button>Enregistrer la carte</button>
+								</div>
+
+							</div>
+						</div>
+
+					</article>
+
+					
+
+				</form>
+			</section>
+	
+	
+			<footer>
+			
+			</footer>
+			
+		</main>
+	
+	</body>
+</html>

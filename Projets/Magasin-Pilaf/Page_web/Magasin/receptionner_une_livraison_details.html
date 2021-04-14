@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Magasin PILAF</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/use_case_creer.css">
+	</head>
+	<body>
+		<header>
+			<div class="blocsSepares" style="align-items:center">
+				<div id="titre_site">
+					<h1>Le Magasin PILAF </h1>
+					<span>&copy;</span>
+				</div>
+
+				<div class="blocsColles">
+					<a href="../Accueil.html" style="padding-right:40px"><img src="../../images/picto_aide.png" alt="aide" /></a>
+					<div class="blocsVerticaux">
+						<p id="identifiant">Frédéric PILAF</p>
+						<p><a href="../../index.html">Se Déconnecter</a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<nav>
+			<ul id="nav_liste">
+				<li class="partie_site">
+					<h2><a href="">Caisse</a></h2>
+					<ul class="sous">
+						<li><a href="../Caisse/creer_client.html">Créer Client</a></li>
+						<li><a href="../Caisse/enregistrer_une_carte_de_fidelite.html">Enregistrer une carte de fidélité</a></li>
+						<li><a href="../Caisse/enregistrer_une_vente.html">Enregistrer une vente</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Employé</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Informations Employé</h3>
+							<ul>
+								<li><a href="../Employé/consulter_employe.html">Consulter les informations</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Horaires Employé</h3>
+							<ul>
+								<li><a href="../Employé/enregistrer_un_horaire_de_travail.html">Enregistrer horaires de travail</a></li>
+								<li><a href="../Employé/consulter_un_horaire_de_travail.html">Consulter horaires de travail</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Fournisseur</a></h2>
+					<ul class="sous">
+						<li><a href="../Fournisseur/creer_fournisseur.html">Créer fournisseur</a></li>
+						<li><a href="../Fournisseur/consulter_fournisseur.html">Consulter fournisseur</a></li>
+						<li>
+							<h3>Catalogue fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_catalogue_fournisseur_recherche.html">Créer catalogue fourniseur</a></li>
+								<li><a href="../Fournisseur/consulter_catalogue_fournisseur_recherche.html">Consulter catalogue fournisseur</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Commande Fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_commande.html">Créer une commande</a></li>
+								<li><a href="../Fournisseur/consulter_commande.html">Consulter une commande</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Magasin</a></h2>
+					<ul class="sous">
+						<li><a href="../Magasin/receptionner_une_livraison.html">Réceptionner une livraison</a></li>
+						<li><a href="../Magasin/consulter_facture.html">Consulter les factures</a></li>
+						<li>
+							<h3>Virement</h3>
+							<ul>
+								<li><a href="../Magasin/payer_une_facture_par_virement_automatique.html">Payer une facture par virement automatique</a></li>
+								<li><a href="../Magasin/consulter_les_virements.html">Consulter les virements</a></li>
+							</ul>
+						</li>
+						<li><a href="../Magasin/consulter_les_statistiques.html">Consulter les statistiques</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Produit et Stocks</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Produit</h3>
+							<ul>
+								<li><a href="../Produit/creer_produit.html">Créer un produit</a></li>
+								<li><a href="../Produit/consulter_produit_liste.html">Consulter un produit</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Stocks</h3>
+							<ul>
+								<li><a href="../Produit/enregistrer_les_mouvements_de_stocks.html">Enregistrer un mouvement de stock</a></li>
+								<li><a href="../Produit/consulter_les_stocks_par_critere.html">Consulter les stocks par critères</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<aside id="nav_fonctionnalite">
+				<h2>Magasin</h2>
+				<ul>
+					<li><a href="../Magasin/receptionner_une_livraison.html">Réceptionner une livraison</a></li>
+					<li><a href="../Magasin/consulter_facture.html">Consulter les factures</a></li>
+					<li><a href="../Magasin/payer_une_facture_par_virement_automatique.html">Payer une facture par virement automatique</a></li>
+					<li><a href="../Magasin/consulter_les_virements.html">Consulter les virements</a></li>
+					<li><a href="../Magasin/consulter_les_statistiques.html">Consulter les statistiques</a></li>
+				</ul>
+			</aside>
+
+
+			<section id="use_case">
+				<h2>Réceptionner une livraison</h2>
+
+				<div class="bouton_haut">
+					<button> <a href="receptionner_une_livraison.html">Revenir à la saisie de la référence</a></button>
+					<button> <a href="../Fournisseur/commandes/X1256.html">Consulter Commande</a></button>
+				</div>
+
+				<form>
+					<article>
+						<h3>Informations de la réception</h3>
+
+						<div class="moitie" style="margin:auto">
+							<div class="champsText">
+								<p>Référence de la commande :</p>
+								<p>X1256</p>
+							</div>
+
+							<div class="champsText">
+								<p>Date Création de la commande :</p>
+								<p>28/05/2019</p>
+							</div>
+
+							<div class="champsText">
+								<p>Fournisseur :</p>
+								<p>Les Pommes du Matin</p>
+							</div>
+
+							<div class="champsText">
+								<p>Montant net de la commande :</p>
+								<p>1000€</p>
+							</div>
+
+							<div class="champsText">
+								<p>Date Réception de la commande :</p>
+								<p>05/06/2019</p>
+							</div>
+
+							<div class="champsText">
+								<p>Heure Réception de la commande :</p>
+								<p>11h00</p>
+							</div>
+
+							<div class="champsText">
+								<p>Personnel ayant réceptionné  :</p>
+								<p>05/06/2019</p>
+							</div>
+
+						</div>
+
+
+					</article>
+
+					<article>
+						<h3>Produits réceptionnés</h3>
+
+						<table class="tableau_use_case">
+							<caption>Tableau des produits réceptionnés</caption>
+							<thead>
+								<tr>
+									<th>Nom du Produit</th>
+									<th>Référence</th>
+									<th>Total à réceptionner (avant la livraison)</th>
+									<th>Nombre réceptionné</th>
+									<th>Reste à réceptionner (après la livraison)</th>
+								<tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Pomme</td>
+									<td>AG8FRT</td>
+									<td>100</td>
+									<td class="case_input"><input type="number" value="50" /></td>
+									<td>50</td>
+								</tr>
+								<tr>
+									<td>Tomate</td>
+									<td>CF78RD</td>
+									<td>250</td>
+									<td class="case_input"><input type="number"  value="250"/></td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Carotte</td>
+									<td>DRE56P</td>
+									<td>65</td>
+									<td class="case_input"><input type="number" value="0"/></td>
+									<td>65</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="champsDescription">
+							<label for="champdesc">Informations liées à la réception</label>
+							<textarea id="champdesc" name="champdesc" rows=5></textarea>
+						</div>
+
+					</article>
+
+					<div class="valider">
+						<button>Valider la réception</button>
+					</div>
+
+				</form>
+			</section>
+
+
+			<footer>
+			</footer>
+
+		</main>
+
+	</body>
+</html>

@@ -1,0 +1,66 @@
+form article {
+	padding-bottom:50px;
+}
+
+.champsText, .champsNombre {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.champsText label{
+	display:block;
+	width:48%;
+}
+
+.champsText input{
+	width:48%;
+}
+
+.champsText input, .champsNombre input, .champsDescription textarea{
+	display:block;
+	border-radius:5px;
+}
+
+.champsText label:after, .champsDescription label:after, .champsNombre label:after{
+	content: " : ";
+}
+
+
+.champsNombre label{
+	display:block;
+	width:75%;
+}
+
+.champsNombre input{
+	width:10%;
+}
+
+
+
+
+.champsDescription{
+	display:flex;
+	flex-direction:column;
+	align-items:stretch;
+}
+
+.champsDescription textarea{
+	margin-top:5px;
+}
+
+.champsObligatoire:before{
+	content:"* ";
+	color:red;
+}
+
+.case_input, .case_input input, .case_input select, .champsText input, .champsDescription textarea, .champsNombre input {
+	background-color: #f3f3f3;
+	color: #3e3e3e;
+}
+
+.case_input input, .case_input select {
+	border: none;
+	width:98%;
+	text-align:center;
+}

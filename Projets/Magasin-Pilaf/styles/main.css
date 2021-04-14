@@ -1,0 +1,460 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/*        Body             */
+body {
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+
+/*        Header             */
+
+header {
+	padding:30px;
+	background-color: #38BB47;
+}
+
+header h1{
+	font-weight:bold;
+	font-size:60px;
+	color:black;
+	padding-right:5px;
+}
+
+#titre_site{
+	display:flex;
+	align-items:flex-start;
+}
+
+#titre_site span{
+	font-weight:bold;
+	font-size:20px;
+}
+
+#identifiant {
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+
+/*        Nav             */
+
+
+
+nav {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #f5f5f5;
+	position: sticky;
+	top: 0px;
+	border-top: 1px solid #005d25;
+}
+
+nav ul {
+	display: flex;
+}
+
+.partie_site {
+	text-align: center;
+	position: relative;
+}
+
+.partie_site {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+nav a:hover {
+	color: #4dbe3b;
+	border-bottom: 2px solid #005d25;
+}
+
+.sous {
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	position: absolute;
+	width: 100%;
+	z-index: 500;
+	background-color:#fafafa;
+}
+
+nav > ul li:hover .sous {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.sous ul{
+	flex-direction:column;
+	padding-left:20px;
+}
+
+.sous li {
+	flex: 1 1 auto;
+	text-align: left;
+}
+
+.sous a, .sous h3{
+	padding: 10px;
+	border-bottom: none;
+}
+
+.sous h3{
+	font-weight:bold;
+}
+
+.sous a:hover {
+	border-bottom: none;
+	background-color: RGBa(200,200,200,0.1);
+}
+
+.partie_site h2> a::after {
+	content: " ▼";
+	font-size: 12px;
+}
+
+
+
+/*        Main             */
+
+
+main {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	border-radius: 5px 5px 0px 0px;
+	border-right: 2px solid grey;
+	border-left: 2px solid grey;
+	border-top: 2px solid grey;
+}
+
+#nav_fonctionnalite {
+	width: 20%;
+	background-color: #4BFA5F;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1px solid grey;
+	border-radius: 4px 0px 0px 0px;
+	min-height:500px;
+}
+
+
+#nav_fonctionnalite h2 {
+	font-size:30px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+
+#nav_fonctionnalite  li{
+	padding-bottom:15px;
+	padding-top:15px;
+}
+
+#nav_fonctionnalite a{
+	line-height:40px;
+	font-size:20px;
+	text-decoration:none;
+	color:black;
+}
+
+#use_case {
+	width: 75%;
+	padding-top: 30px;
+	padding-bottom:30px;
+}
+
+
+#use_case h2{
+	text-align:center;
+	font-size:40px;
+	padding-bottom:40px;
+}
+
+#use_case h3{
+	font-size:20px;
+	font-weight:bold;
+	padding-bottom:30px;
+}
+
+#use_case h4{
+	font-size:17px;
+	font-weight:bold;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+article > *:not(h3) {
+	margin-left: 20px;
+}
+
+
+
+/*        Outils         */
+
+
+.moitie {
+	width: 50%;
+}
+
+.troisQuarts {
+	width: 75%;
+}
+
+/* Les blocs Collés et séparés permettent d'avoir des blocs sur la même ligne, blocs verticaux sur la même colonne*/
+.blocsColles, .blocsSepares{
+	display:flex;
+	align-items:flex-start;
+}
+
+.blocsColles {
+	justify-content: left;
+}
+
+.blocsSepares {
+	justify-content: space-between;
+}
+
+.blocsVerticaux {
+	display:flex;
+	flex-direction:column;
+	align-items:flex-end;
+}
+
+
+
+/* Le tableau permet d'avoir un tableau à peu près esthétique */
+.tableau_use_case {
+	margin:auto;
+	text-align:center;
+	width:90%;
+	margin-bottom:20px;
+}
+
+.tableau_use_case td:not(.case_vide), .tableau_use_case th:not(.case_vide){
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.tableau_use_case td:not(.case_input), .tableau_use_case th:not(.case_vide), .case_input input, .case_input select {
+	padding-top: 10px;
+	padding-bottom : 10px;
+}
+
+.tableau_use_case th:not(.case_vide) {
+	background-color: #4BFA5F;
+}
+
+.tableau_use_case caption{
+	font-weight:bold;
+	padding-bottom:10px;
+}
+
+
+
+/* Box couleur permet de mettre un bloc dans une couleur verte, pour le différencier*/
+.box_couleur {
+	border-radius: 5px;
+	background-color: #57ff69;
+	padding:10px;
+}
+
+
+.box_couleur_cliquer {
+	border-radius: 5px;
+	background-color: #6be879;
+	padding: 10px;
+}
+
+.box_couleur_cliquer:hover{
+	background-color: #8bf899;
+}
+
+/* La partie Caché est révélé lorsque l'input checkbox sesame (dont le label est labelSesame) est checked*/
+.partieCache{
+	display:none;
+}
+
+.sesame{
+	position:fixed;
+	left:-100px;
+}
+
+.sesame:focus + .labelSesame {
+	outline:black dotted 1px;
+}
+
+.sesame:hover + .labelSesame{
+	cursor:pointer;
+}
+
+.sesame:checked ~ .partieCache{
+	display:block;
+}
+
+
+.partieAjoute {
+	display: none;
+}
+
+.inputAjouter {
+	position: fixed;
+	left: -100px;
+}
+
+.inputAjouter:focus + .labelAjouter {
+	outline: black dotted 1px;
+}
+
+.inputAjouter:hover + .labelAjouter {
+	cursor: pointer;
+}
+
+.inputAjouter:checked ~ .partieAjoute {
+	display: block;
+}
+
+.inputAjouter:checked ~ .labelAjouter {
+	float:right;
+}
+
+.inputAjouter:not(:checked) ~ .labelAjouter:before{
+	content:"+ Ajouter ";
+}
+
+.inputAjouter:checked ~ .labelAjouter:before{
+	content:"- Suppimer "
+} 
+
+
+
+/* Le bouton valider est le bouton qui est présent à la fin d'un form*/
+.valider {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.valider button{
+	font-size:20px;
+	line-height:30px;
+	border-radius:5px;
+}
+
+
+
+.champsConsulter {
+    padding-top : 10px;
+    padding-left : 60px;
+    padding-bottom : 20px;
+    width : 500px;
+}
+
+
+.bouton_haut{
+	display:flex;
+	justify-content:space-between;
+	padding:20px;
+}
+
+.bouton_haut button{
+	border-radius:5px;
+	font-size:20px;
+}
+
+
+
+
+.petitBouton {
+	border-radius: 5px;
+	font-size: 16px;
+	display:block;
+	margin:auto;
+}
+
+
+.champsColles{
+	padding:10px;
+}
+
+.champsColles > *{
+	margin-right: 10px;
+}
+
+
+.fauxBouton {
+	margin:20px;
+	padding:5px;
+	background-color:#CCC;
+	border-radius: 5px;
+	font-size: 16px;
+	text-align:center;
+	display:block;
+
+}
+
+
+.fauxBouton:hover{
+	background-color:#EEE;
+}

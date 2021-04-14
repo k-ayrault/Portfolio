@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Magasin PILAF</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/use_case_creer.css">
+	</head>
+	<body>
+		<header>
+			<div class="blocsSepares" style="align-items:center">
+				<div id="titre_site">
+					<h1>Le Magasin PILAF </h1>
+					<span>&copy;</span>
+				</div>
+
+				<div class="blocsColles">
+					<a href="../Accueil.html" style="padding-right:40px"><img src="../../images/picto_aide.png" alt="aide" /></a>
+					<div class="blocsVerticaux">
+						<p id="identifiant">Frédéric PILAF</p>
+						<p><a href="../../index.html">Se Déconnecter</a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<nav>
+			<ul id="nav_liste">
+				<li class="partie_site">
+					<h2><a href="">Caisse</a></h2>
+					<ul class="sous">
+						<li><a href="../Caisse/creer_client.html">Créer Client</a></li>
+						<li><a href="../Caisse/enregistrer_une_carte_de_fidelite.html">Enregistrer une carte de fidélité</a></li>
+						<li><a href="../Caisse/enregistrer_une_vente.html">Enregistrer une vente</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Employé</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Informations Employé</h3>
+							<ul>
+								<li><a href="../Employé/consulter_employe.html">Consulter les informations</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Horaires Employé</h3>
+							<ul>
+								<li><a href="../Employé/enregistrer_un_horaire_de_travail.html">Enregistrer horaires de travail</a></li>
+								<li><a href="../Employé/consulter_un_horaire_de_travail.html">Consulter horaires de travail</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Fournisseur</a></h2>
+					<ul class="sous">
+						<li><a href="../Fournisseur/creer_fournisseur.html">Créer fournisseur</a></li>
+						<li><a href="../Fournisseur/consulter_fournisseur.html">Consulter fournisseur</a></li>
+						<li>
+							<h3>Catalogue fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_catalogue_fournisseur_recherche.html">Créer catalogue fourniseur</a></li>
+								<li><a href="../Fournisseur/consulter_catalogue_fournisseur_recherche.html">Consulter catalogue fournisseur</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Commande Fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_commande.html">Créer une commande</a></li>
+								<li><a href="../Fournisseur/consulter_commande.html">Consulter une commande</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Magasin</a></h2>
+					<ul class="sous">
+						<li><a href="../Magasin/receptionner_une_livraison.html">Réceptionner une livraison</a></li>
+						<li><a href="../Magasin/consulter_facture.html">Consulter les factures</a></li>
+						<li>
+							<h3>Virement</h3>
+							<ul>
+								<li><a href="../Magasin/payer_une_facture_par_virement_automatique.html">Payer une facture par virement automatique</a></li>
+								<li><a href="../Magasin/consulter_les_virements.html">Consulter les virements</a></li>
+							</ul>
+						</li>
+						<li><a href="../Magasin/consulter_les_statistiques.html">Consulter les statistiques</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Produit et Stocks</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Produit</h3>
+							<ul>
+								<li><a href="../Produit/creer_produit.html">Créer un produit</a></li>
+								<li><a href="../Produit/consulter_produit_liste.html">Consulter un produit</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Stocks</h3>
+							<ul>
+								<li><a href="../Produit/enregistrer_les_mouvements_de_stocks.html">Enregistrer un mouvement de stock</a></li>
+								<li><a href="../Produit/consulter_les_stocks_par_critere.html">Consulter les stocks par critères</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<aside id="nav_fonctionnalite">
+				<h2>Fournisseur</h2>
+				<ul>
+					<li><a href="../Fournisseur/creer_fournisseur.html">Créer un fournisseur</a></li>
+					<li><a href="../Fournisseur/consulter_fournisseur.html">Consulter un fournisseur</a></li>
+					<li><a href="../Fournisseur/creer_catalogue_fournisseur_recherche.html">Créer un catalogue fournisseur</a></li>
+					<li><a href="../Fournisseur/consulter_catalogue_fournisseur_recherche.html">Consulter un catalogue fournisseur</a></li>
+					<li><a href="../Fournisseur/creer_commande.html">Créer une commande fournisseur</a></li>
+					<li><a href="../Fournisseur/consulter_commande.html">Consulter une commande fournisseur</a></li>
+				</ul>
+			</aside>
+
+
+			<section id="use_case">
+				<h2>Modifier Fournisseur</h2>
+
+				<form>
+					<article>
+						<h3>Désignation</h3>
+
+						<div class="champsText moitie">
+							<label for="champsNomFournisseur" class="champsObligatoire">Nom du Fournisseur</label>
+							<input type="text" id="champsNomFournisseur" name="champsNomFournisseur" value="Les Pommes du Matin" required />
+						</div>
+
+						<div class="champsText moitie">
+							<label for="imgFournisseur">Image du Fournisseur</label>
+							<input type="file" id="imgFournisseur" name="imgFournisseur" accept="image/png, image/jpeg" />
+						</div>
+
+						<div class="champsText moitie">
+							<label for="reference" class="champsObligatoire">Référence</label>
+							<input type="text" id="reference" name="reference" value="A9K279" required />
+						</div>
+
+						<div class="blocsColles">
+							<div class="moitie">
+								<div class="champsText">
+									<label for="siegeSocial">Adresse du siege social</label>
+									<input type="text" id="siegeSocial" name="siegeSocial" value="21 rue du Hasard"/>
+								</div>
+								<div class="champsText">
+									<label for="pays">Pays</label>
+									<input type="text" id="pays" name="pays" value="France" />
+								</div>
+							</div>
+							<div class="champsText">
+								<label for="codePostal">Code Postal</label>
+								<input type="text" id="codePostal" name="codePostal" value="87000"/>
+							</div>
+
+						</div>
+
+
+
+
+						<div class="champsDescription">
+							<label for="champdesc">Description</label>
+							<textarea id="champdesc" name="champdesc" rows=5>Fournisseur qui vend uniquement des pommes</textarea>
+						</div>
+
+					</article>
+
+					<article>
+						<h3>Contacter l'entreprise</h3>
+
+						<div class="blocsColles">
+							<div class="moitie">
+
+								<div class="champsText">
+									<label for="mailEntreprise">Mail</label>
+									<input type="text" id="mailEntreprise" name="mailEntreprise" value="lePommierBio@gmail.com" />
+								</div>
+
+								<div class="champsText">
+									<label for="siteEntreprise">Site Web</label>
+									<input type="text" id="siteEntreprise" name="siteEntreprise" value="https://lePommierBio.com" />
+								</div>
+
+							</div>
+
+							<div class="moitie">
+
+								<div class="champsText">
+									<label for="telEntreprise">Téléphone</label>
+									<input type="text" id="telEntreprise" name="telEntreprise" value="+33 6 66 66 66 66" />
+								</div>
+
+								<div class="champsText">
+									<label for="faxEntreprise">Fax</label>
+									<input type="text" id="faxEntreprise" name="faxEntreprise"  value="02 22 22 22 22" />
+								</div>
+							</div>
+						</div>
+
+					</article>
+
+
+					<article>
+						<h3>Réseaux sociaux</h3>
+
+						<div class="champsText moitie">
+							<label for="instaEntreprise">Instagram</label>
+							<input type="text" id="instaEntreprise" name="instaEntreprise" />
+						</div>
+
+						<div class="champsText moitie">
+							<label for="facebookEntreprise">Facebook</label>
+							<input type="text" id="facebookEntreprise" name="facebookEntreprise" />
+						</div>
+
+						<div class="champsText moitie">
+							<label for="twitterEntreprise">Twitter</label>
+							<input type="text" id="twitterEntreprise" name="twitterkEntreprise" />
+						</div>
+
+						<input type="checkbox" class="inputAjouter" id="ajoutReseauSocial" name="ajoutReseauSocial" />
+						<label for="ajoutReseauSocial" class="labelAjouter">un réseau social</label>
+
+						<div class="partieAjoute">
+							<div class="champsText moitie">
+								<input type="text" id="autreReseauEntreprise" name="autreReseauEntreprise" placeholder="Saisir le nom du réseau social" />
+								<input type="text" id="nomAutreReseauEntreprise" name="nomAutreReseauEntreprise" />
+							</div>
+						</div>
+
+
+					</article>
+
+
+					<article>
+						<h3>Informations sur la livraison</h3>
+
+						<div class="champsText moitie">
+							<label for="champsModeLivr1">Mode de livraison n°1</label>
+							<input type="text" id="champsModeLivr1" name="champsModeLivr1" value="Camion" />
+						</div>
+
+						<input type="checkbox" class="inputAjouter" id="ajoutModeDeLivr" name="ajoutModeDeLivr" />
+
+						<label for="ajoutModeDeLivr" class="labelAjouter">un mode de livraison</label>
+
+						<div class="partieAjoute">
+							<div class="champsText moitie">
+								<label for="champsModeLivr2">Mode de livraison n°2</label>
+								<input type="text" id="champsModeLivr2" name="champsModeLivr2" />
+							</div>
+						</div>
+
+
+						<div class="champsText" style="width:75%">
+							<p>Délai moyen de commande : </p>
+							<input type="number" id="delaiCommandeJours" name="delaiCommandeJours" style="width:60px;" />
+							<p>jours</p>
+							<input type="number" id="delaiCommandeHeures" name="delaiCommandeHeures" style="width:60px;" />
+							<p>heures</p>
+						</div>
+
+					</article>
+
+					<article>
+						<h3>Informations sur la commande</h3>
+
+						<div class="champsText moitie">
+							<label for="champsModeLivr1">Délai de règlement</label>
+							<input type="number" id="champsModeLivr1" name="champsModeLivr1" />
+						</div>
+
+						<h4>Escomptes</h4>
+
+						<div class="champsNombre moitie">
+							<label for="escompteComptant">Paiement au comptant</label>
+							<input type="number" id="escompteComptant" name="escompteComptant" />
+							<span>%</span>
+						</div>
+
+						<div>
+							<input type="checkbox" class="inputAjouter" id="ajoutEscompte" name="ajoutEscompte" />
+							<label for="ajoutEscompte" class="labelAjouter">un type d'escompte</label>
+
+							<div class="partieAjoute">
+								<div class="champsText moitie">
+									<p>Paiement à </p>
+									<input type="number" id="delaiCommandeJours" name="delaiCommandeJours" style="width:60px;" />
+									<p>jours :</p>
+									<input type="number" id="delaiCommandeHeures" name="delaiCommandeHeures" style="width:60px;" />
+									<span>%</span>
+								</div>
+							</div>
+
+						</div>
+
+						<h4>Modes de paiement</h4>
+
+						<div class="champsText moitie">
+							<label for="modeDePaiement1">Par</label>
+							<input type="text" id="modeDePaiement1" name="modeDePaiement1" />
+						</div>
+
+						<div>
+							<input type="checkbox" class="inputAjouter" id="ajoutModePaiement" name="ajoutModePaiement" />
+							<label for="ajoutModePaiement" class="labelAjouter">un mode de livraison</label>
+
+							<div class="partieAjoute">
+								<div class="champsText moitie">
+									<label for="modeDePaiement2">Par</label>
+									<input type="text" id="modeDePaiement2" name="modeDePaiement2" />
+								</div>
+							</div>
+
+						</div>
+
+					</article>
+
+
+					<article>
+						<h3>Contacts</h3>
+
+						<div>
+							<input type="checkbox" class="inputAjouter" id="contact1" name="contact1" />
+							<label for="contact1" class="labelAjouter">un contact</label>
+
+							<div class="partieAjoute">
+								<h4>Contact n°1</h4>
+
+								<div class="champsText moitie">
+									<label for="champsNomContact" class="champsObligatoire">Nom du Contact</label>
+									<input type="text" id="champsNomContact" name="champsNomContact" required />
+								</div>
+
+								<div class="champsText moitie">
+									<label for="imgContact">Image du Contact</label>
+									<input type="file" id="imgContact" name="imgContact" accept="image/png, image/jpeg" />
+								</div>
+
+								<div class="blocsColles">
+
+									<div class="moitie">
+
+										<div class="champsText">
+											<label for="fonction">Fonction</label>
+											<input type="text" id="fonction" name="fonction" />
+										</div>
+
+										<div class="champsText">
+											<label for="mail">Mail</label>
+											<input type="email" id="mail" name="mail" />
+										</div>
+
+									</div>
+
+									<div class="moitie">
+										<div class="champsText">
+											<label for="telephone">Téléphone</label>
+											<input type="tel" id="telephone" name="telephone" />
+										</div>
+
+										<div class="champsText">
+											<label for="fax">Fax</label>
+											<input type="text" id="fax" name="fax" size="30" />
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+					</article>
+
+					<article>
+						<h3>Catalogue Fournisseur</h3>
+
+						<a href="../Fournisseur/creer_catalogue_fournisseur.html"><input type="button" value="Créer Catalogue Fournisseur"/></a>
+					</article>
+
+
+					<article>
+						<h3>Comptes bancaires associés</h3>
+
+
+						<div>
+							<input type="checkbox" class="inputAjouter" id="compteBanacaire1" name="compteBanacaire1" />
+							<label for="compteBanacaire1" class="labelAjouter">un compte bancaire</label>
+
+							<div class="partieAjoute">
+								<h4>Compte bancaire n°1</h4>
+
+								<div class="champsText moitie">
+									<label for="titulaireCompte1">Titulaire du compte</label>
+									<input type="text" id="titulaireCompte1" name="titulaireCompte1" />
+								</div>
+
+								<div class="champsText moitie">
+									<label for="domiciliationCompte1">Image du Contact</label>
+									<input type="text" id="domiciliationCompte1" name="domiciliationCompte1" />
+								</div>
+
+								<div class="blocsColles">
+									<p>IBAN :</p>
+									<input type="text" id="IBAN1Compte1" name="IBAN1Compte1" size="4" />
+									<input type="text" id="IBAN2Compte1" name="IBAN2Compte1" size="4" />
+									<input type="text" id="IBAN3Compte1" name="IBAN3Compte1" size="4" />
+									<input type="text" id="IBAN4Compte1" name="IBAN4Compte1" size="4" />
+									<input type="text" id="IBAN5Compte1" name="IBAN5Compte1" size="4" />
+									<input type="text" id="IBAN6Compte1" name="IBAN6Compte1" size="4" />
+									<input type="text" id="IBAN7Compte1" name="IBAN7Compte1" size="3" />
+								</div>
+
+								<div class="champsText moitie">
+									<label for="BICCompte1">BIC</label>
+									<input type="text" id="domiciliationCompte1" name="domiciliationCompte1" />
+								</div>
+
+								<div class="champsDescription">
+									<label for="champDescCompte1">Description</label>
+									<textarea id="champDescCompte1" name="champDescCompte1" rows=2></textarea>
+								</div>
+
+							</div>
+						</div>
+					</article>
+
+
+					<article>
+						<h3>Documents realtifs au fournisseur</h3>
+
+						<div class="champsText moitie">
+							<label for="champsDocuments">Ajouter des fichiers</label>
+							<input type="file" id="champsDocuments" name="champsDocuments" />
+						</div>
+
+					</article>
+
+					<div class="valider">
+						<button>Sauvegarder les modifications</button>
+					</div>
+
+				</form>
+			</section>
+
+
+			<footer>
+			</footer>
+
+		</main>
+
+	</body>
+</html>

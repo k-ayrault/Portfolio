@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Magasin PILAF</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/use_case_creer.css">
+	</head>
+	<body>
+		<header>
+			<div class="blocsSepares" style="align-items:center">
+				<div id="titre_site">
+					<h1>Le Magasin PILAF </h1>
+					<span>&copy;</span>
+				</div>
+
+				<div class="blocsColles">
+					<a href="../Accueil.html" style="padding-right:40px"><img src="../../images/picto_aide.png" alt="aide" /></a>
+					<div class="blocsVerticaux">
+						<p id="identifiant">Frédéric PILAF</p>
+						<p><a href="../../index.html">Se Déconnecter</a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<nav>
+			<ul id="nav_liste">
+				<li class="partie_site">
+					<h2><a href="">Caisse</a></h2>
+					<ul class="sous">
+						<li><a href="../Caisse/creer_client.html">Créer Client</a></li>
+						<li><a href="../Caisse/enregistrer_une_carte_de_fidelite.html">Enregistrer une carte de fidélité</a></li>
+						<li><a href="../Caisse/enregistrer_une_vente.html">Enregistrer une vente</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Employé</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Informations Employé</h3>
+							<ul>
+								<li><a href="../Employé/consulter_employe.html">Consulter les informations</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Horaires Employé</h3>
+							<ul>
+								<li><a href="../Employé/enregistrer_un_horaire_de_travail.html">Enregistrer horaires de travail</a></li>
+								<li><a href="../Employé/consulter_un_horaire_de_travail.html">Consulter horaires de travail</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Fournisseur</a></h2>
+					<ul class="sous">
+						<li><a href="../Fournisseur/creer_fournisseur.html">Créer fournisseur</a></li>
+						<li><a href="../Fournisseur/consulter_fournisseur.html">Consulter fournisseur</a></li>
+						<li>
+							<h3>Catalogue fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_catalogue_fournisseur_recherche.html">Créer catalogue fourniseur</a></li>
+								<li><a href="../Fournisseur/consulter_catalogue_fournisseur_recherche.html">Consulter catalogue fournisseur</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Commande Fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_commande.html">Créer une commande</a></li>
+								<li><a href="../Fournisseur/consulter_commande.html">Consulter une commande</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Magasin</a></h2>
+					<ul class="sous">
+						<li><a href="../Magasin/receptionner_une_livraison.html">Réceptionner une livraison</a></li>
+						<li><a href="../Magasin/consulter_facture.html">Consulter les factures</a></li>
+						<li>
+							<h3>Virement</h3>
+							<ul>
+								<li><a href="../Magasin/payer_une_facture_par_virement_automatique.html">Payer une facture par virement automatique</a></li>
+								<li><a href="../Magasin/consulter_les_virements.html">Consulter les virements</a></li>
+							</ul>
+						</li>
+						<li><a href="../Magasin/consulter_les_statistiques.html">Consulter les statistiques</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Produit et Stocks</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Produit</h3>
+							<ul>
+								<li><a href="../Produit/creer_produit.html">Créer un produit</a></li>
+								<li><a href="../Produit/consulter_produit_liste.html">Consulter un produit</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Stocks</h3>
+							<ul>
+								<li><a href="../Produit/enregistrer_les_mouvements_de_stocks.html">Enregistrer un mouvement de stock</a></li>
+								<li><a href="../Produit/consulter_les_stocks_par_critere.html">Consulter les stocks par critères</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+			
+		<main>
+			<aside id="nav_fonctionnalite">
+				<h2>Magasin</h2>
+				<ul>
+					<li><a href="../Magasin/receptionner_une_livraison.html">Réceptionner une livraison</a></li>
+					<li><a href="../Magasin/consulter_facture.html">Consulter les factures</a></li>
+					<li><a href="../Magasin/payer_une_facture_par_virement_automatique.html">Payer une facture par virement automatique</a></li>
+					<li><a href="../Magasin/consulter_les_virements.html">Consulter les virements</a></li>
+					<li><a href="../Magasin/consulter_les_statistiques.html">Consulter les statistiques</a></li>
+				</ul>
+			</aside>
+		
+		
+			<section id="use_case">
+				<h2>Consulter les statistiques</h2>
+				
+				<form>
+
+						<div class="blocsColles">
+							<div class="champsText moitie">
+							<div class="champsText moitie">
+								<label for="champgauche">Date</label>
+									<select name="champDroite2" id="champDroite2" class="moitie" style="text-align:center;"> 
+										<option value="event_1">Pas de date</option>
+										<option value="event_2">04/05 - 08/05</option>
+										<option value="event_3">11/05 - 15/05</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="champsText moitie">
+								<div class="champsText moitie">
+									<label for="champgauche">Fournisseur</label>
+									<input type="text" id="champgauche" name="champgauche" />
+								</div>
+							</div>
+						</div>
+					</article>
+						
+					<article>
+						<div style="text-align:center; padding-top:2%;">
+							<input type="checkbox" id="montreCache" class="sesame" name="sesame" />
+							<label for="montreCache" class="labelSesame">Rechercher</label>
+
+							<div class="partieCache" style="padding-top:2%;">
+							
+								<table class="tableau_use_case">
+									<caption>Pommémoi</caption>
+									<thead>
+										<tr>
+											<th>Produit</th>
+											<th>Quantité achetée</th>
+											<th>Avance</th>
+											<th>Quantité vendue</th>
+											<th>Revenu</th>
+											<th>Bénéfice/Perte</th>
+										<tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Pomme</td>
+											<td>523</td>
+											<td>1046,00 €</td>
+											<td>230</td>
+											<td>460,00 €</td>
+											<td>-586,00 €</td>
+										</tr>
+										<tr>
+											<td>Poire</td>
+											<td>320</td>
+											<td>640,00 €</td>
+											<td>124</td>
+											<td>248,00 €</td>
+											<td>-392,00 €</td>
+										</tr>
+										<tr>
+											<td>Pastèque</td>
+											<td>420</td>
+											<td>1680,00 €</td>
+											<td>345</td>
+											<td>1380,00 €</td>
+											<td>-300,00 €</td>
+										</tr>
+										<tr>
+											<th>Total</th>
+											<td>1263</td>
+											<td>3366,00 €</td>
+											<td>699</td>
+											<td>2088,00 €</td>
+											<td>-1278,00 €</tj>
+										</tr>
+									</tbody>
+								</table>
+						
+							</div>
+						</div>
+					</article>
+
+				</form>
+			</section>
+	
+	
+			<footer>
+			
+			</footer>
+			
+		</main>
+	
+	</body>
+</html>

@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Magasin PILAF</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/use_case_creer.css">
+	</head>
+	<body>
+		<header>
+			<div class="blocsSepares" style="align-items:center">
+				<div id="titre_site">
+					<h1>Le Magasin PILAF </h1>
+					<span>&copy;</span>
+				</div>
+
+				<div class="blocsColles">
+					<a href="../Accueil.html" style="padding-right:40px"><img src="../../images/picto_aide.png" alt="aide" /></a>
+					<div class="blocsVerticaux">
+						<p id="identifiant">Frédéric PILAF</p>
+						<p><a href="../../index.html">Se Déconnecter</a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<nav>
+			<ul id="nav_liste">
+				<li class="partie_site">
+					<h2><a href="">Caisse</a></h2>
+					<ul class="sous">
+						<li><a href="../Caisse/creer_client.html">Créer Client</a></li>
+						<li><a href="../Caisse/enregistrer_une_carte_de_fidelite.html">Enregistrer une carte de fidélité</a></li>
+						<li><a href="../Caisse/enregistrer_une_vente.html">Enregistrer une vente</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Employé</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Informations Employé</h3>
+							<ul>
+								<li><a href="../Employé/consulter_employe.html">Consulter les informations</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Horaires Employé</h3>
+							<ul>
+								<li><a href="../Employé/enregistrer_un_horaire_de_travail.html">Enregistrer horaires de travail</a></li>
+								<li><a href="../Employé/consulter_un_horaire_de_travail.html">Consulter horaires de travail</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Fournisseur</a></h2>
+					<ul class="sous">
+						<li><a href="../Fournisseur/creer_fournisseur.html">Créer fournisseur</a></li>
+						<li><a href="../Fournisseur/consulter_fournisseur.html">Consulter fournisseur</a></li>
+						<li>
+							<h3>Catalogue fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_catalogue_fournisseur_recherche.html">Créer catalogue fourniseur</a></li>
+								<li><a href="../Fournisseur/consulter_catalogue_fournisseur_recherche.html">Consulter catalogue fournisseur</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Commande Fournisseur</h3>
+							<ul>
+								<li><a href="../Fournisseur/creer_commande.html">Créer une commande</a></li>
+								<li><a href="../Fournisseur/consulter_commande.html">Consulter une commande</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Magasin</a></h2>
+					<ul class="sous">
+						<li><a href="../Magasin/receptionner_une_livraison.html">Réceptionner une livraison</a></li>
+						<li><a href="../Magasin/consulter_facture.html">Consulter les factures</a></li>
+						<li>
+							<h3>Virement</h3>
+							<ul>
+								<li><a href="../Magasin/payer_une_facture_par_virement_automatique.html">Payer une facture par virement automatique</a></li>
+								<li><a href="../Magasin/consulter_les_virements.html">Consulter les virements</a></li>
+							</ul>
+						</li>
+						<li><a href="../Magasin/consulter_les_statistiques.html">Consulter les statistiques</a></li>
+					</ul>
+				</li>
+
+				<li class="partie_site">
+					<h2><a href="">Produit et Stocks</a></h2>
+					<ul class="sous">
+						<li>
+							<h3>Produit</h3>
+							<ul>
+								<li><a href="../Produit/creer_produit.html">Créer un produit</a></li>
+								<li><a href="../Produit/consulter_produit_liste.html">Consulter un produit</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3>Stocks</h3>
+							<ul>
+								<li><a href="../Produit/enregistrer_les_mouvements_de_stocks.html">Enregistrer un mouvement de stock</a></li>
+								<li><a href="../Produit/consulter_les_stocks_par_critere.html">Consulter les stocks par critères</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+			
+		<main>
+			<aside id="nav_fonctionnalite">
+				<h2>Produit</h2>
+				<ul>
+					<li><a href="../Produit/creer_produit.html">Créer un produit</a></li>
+					<li><a href="../Produit/consulter_produit_liste.html">Consulter un produit</a></li>
+					<li><a href="../Produit/enregistrer_les_mouvements_de_stocks.html">Enregistrer un mouvement</a></li>
+					<li><a href="../Produit/consulter_les_stocks_par_critere.html">Consulter les stocks par critère</a></li>
+				</ul>
+			</aside>
+		
+		
+			<section id="use_case">
+				<h2>Créer un produit</h2>
+				
+				<form>
+					<article>
+						<h3>Désignation</h3>
+
+						<div class="blocsColles">
+							<div class="champsText moitie">
+								<label for="champsInput" class="champsObligatoire">Nom du produit</label>
+								<input type="text" id="champsInput" name="champsInput" required />
+							</div>
+
+							<div>
+								<input type="file">
+							</div>
+						</div>
+
+						<div class="champsText moitie">
+							<label for="autreChamp" class="champsObligatoire">Référence</label>
+							<input type="text" id="autreChamp" name="autreChamp" required />
+						</div>
+
+						<div class="champsDescription">
+							<label for="champdesc">Description</label>
+							<textarea id="champdesc" name="champdesc" rows=5></textarea>
+						</div>
+
+					</article>
+
+					<article>
+						<h3>Détails du Produit</h3>
+
+
+						<div class="blocsColles">
+							<div class="moitie">
+								<div class="champsText">
+									<label for="typeProduit" class="champsObligatoire">Type de Produit</label>
+									<input type="text" id="typeProduit" name="typeProduit" required />
+								</div>
+								<div class="champsText">
+									<label for="conservation" class="champsObligatoire">Conservation</label>
+									<input type="text" id="conservation" name="conservation" required />
+								</div>
+								<div class="champsText">
+									<label for="tauxTVA" class="champsObligatoire">Taux TVA</label>
+									<input type="text" id="tauxTVA" name="tauxTVA" required />
+								</div>
+								<div class="champsText">
+									<label for="tva">TVA</label>
+									<input type="text" id="tva" name="tva" value="" disabled />
+								</div>
+							</div>
+							<div class="moitie">
+								<div class="champsText">
+									<label for="provenance" class="champsObligatoire">Provenance</label>
+									<input type="text" id="provenance" name="provenance" required />
+								</div>
+								<div class="champsText">
+									<label for="poidsUnitaire" class="champsObligatoire">Poids Unitaire</label>
+									<input type="text" id="poidsUnitaire" name="poidsUnitaire" required />
+								</div>
+								<div class="champsText">
+									<label for="prixUnitaireHT" class="champsObligatoire">Prix Unitaire HT</label>
+									<input type="text" id="prixUnitaireHT" name="prixUnitaireHT" required />
+								</div>
+								<div class="champsText">
+									<label for="prixTTC">Prix TTC</label>
+									<input type="text" id="prixTTC" name="prixTTC" value="" disabled />
+								</div>
+							</div>
+						</div>
+
+
+
+					</article>
+
+					<article>
+						<h3>Promotions du Produit</h3>
+
+						<input type="checkbox" class="inputAjouter" id="ajoutReseauSocial" name="ajoutReseauSocial" />
+						<label for="ajoutReseauSocial" class="labelAjouter">promotion</label>
+
+						<div class="partieAjoute blocsColles">
+							<div class="blocsColles">
+								<div class="moitie">
+									<div class="champsText">
+										<label for="aPartirProm" class="champsObligatoire">A partir de</label>
+										<input type="date" id="aPartirProm" name="aPartirProm" required />
+									</div>
+									<div class="champsText">
+										<label for="lotProm" class="champsObligatoire">Lot de </label>
+										<input type="number" id="lotProm" name="lotProm" required />
+									</div>
+								</div>
+								<div class="moitie">
+									<div class="champsText">
+										<label for="jusquarProm" class="champsObligatoire">Jusqu'au</label>
+										<input type="date" id="jusquarProm" name="jusquarProm" required />
+									</div>
+									<div class="champsText">
+										<label for="ticket">Par ticket de caisse</label>
+										<input type="checkbox" id="poidsUnitaire" name="poidsUnitaire" />
+									</div>
+								</div>
+							</div>
+
+							<div class="blocsColles" style="align-items:center">
+								<div class="champsText" style="width:40%">
+									<label for="jusquarProm" class="champsObligatoire">Promotion de</label>
+									<input type="number" id="jusquarProm" name="jusquarProm" required />
+								</div>
+								<select>
+									<option>€</option>
+									<option>%</option>
+								</select>
+							</div>
+
+
+						</div>
+
+					</article>
+
+
+					<article>
+						<h3>Fournisseur</h3>
+
+						<div class="champsText moitie">
+							<label for="listeFournisseur">Fournisseur 1</label>
+							<select name="listeFournisseur" id="listeFournisseur">
+								<option value="event_1">Les Pommes du Matin</option>
+								<option value="event_2">Bio & Local</option>
+								<option value="event_3">Le Fournisseur Bio</option>
+							</select>
+						</div>
+
+						<input type="checkbox" id="montreCache" class="sesame" name="montreCache" />
+
+
+						<div class="partieCache">
+							<div class="champsText moitie">
+								<label for="listeFournisseur2">Fournisseur 2</label>
+								<select name="listeFournisseur2" id="listeFournisseur2">
+									<option value="event_1"></option>
+									<option value="event_2">Les Pommes du Matin</option>
+									<option value="event_3">Bio & Local</option>
+									<option value="event_4">Le Fournisseur Bio</option>
+								</select>
+							</div>
+						</div>
+
+						<label for="montreCache" class="labelSesame">Ajouter un fournisseur</label>
+
+					</article>
+
+					<article>
+						<h3>Règle de réassort</h3>
+
+						<div class="champsText moitie">
+							<label for="autreChamp" class="champsObligatoire">Quantité minimum</label>
+							<input type="text" id="autreChamp" name="autreChamp" required />
+						</div>
+
+						<div class="champsText moitie">
+							<label for="autreChamp" class="champsObligatoire">Quantité de réassort</label>
+							<input type="text" id="autreChamp" name="autreChamp" required />
+						</div>
+
+					</article>
+
+					<div class="valider">
+						<button>Confirmer la création</button>
+					</div>
+
+				</form>
+			</section>
+	
+	
+			<footer>
+			
+			</footer>
+			
+		</main>
+	
+	</body>
+</html>
