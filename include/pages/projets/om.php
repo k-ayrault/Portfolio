@@ -11,6 +11,15 @@
         <br/>
         &emsp;&emsp;Je dois gérer beaucoup de base de données en ajoutant et récupérant les scores des matchs, les informations des matchs et les joueurs des compositions par exemple.
         Je dois aussi faire beaucoup de CSS afin de m'occuper du design du site afin que celui-ci soit agréable à utiliser par les utilisateurs. </p>
+
+        <br/>
+        <br/>
+        <p>Compétences développées : </p>
+        <ul>
+            <li>HTML5/CSS3</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
     </div>
 
     <div id="imageProjet">

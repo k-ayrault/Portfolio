@@ -135,9 +135,10 @@
                         <li><a href="">AK</a>
                             <ul id="sous">
                                 <li><a href="AYRAULT_CV.pdf" download>Télécharger le CV</a></li>
-                                <li id='plus_info_header'><form action="index.php?page=mails" method="post">
+                                <li id='plus_info_header'><form action="index.php" method="get">
+                                        <input type="hidden" name="page" value="mails">
                                         <input type="hidden" name="mail" value="info">
-                                        <button name="plusdinfo">Plus d'information</button>
+                                        <button id="plusdinfo">Plus d'information</button>
                                     </form>
                                 </li>
                                 <li style="border-radius:0 0 1.5em 1.5em;"><a href="index.php?page=deco">Quitter le portfolio</a></li>
@@ -156,9 +157,10 @@
 
             <div id="continue">
 
-                <form action="index.php?page=mails" method="post">
+                <form action="index.php" method="get">
+                    <input type="hidden" name="page" value="mails">
                     <input type="hidden" name="mail" value="info">
-                    <button name="plusdinfo">Plus d'information</button>
+                    <button id="plusdinfo">Plus d'information</button>
                 </form>
 
             </div>

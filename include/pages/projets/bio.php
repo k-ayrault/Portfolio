@@ -12,6 +12,15 @@
         <br/>
         &emsp;&emsp;Nous devions réaliser une application web afin de permettre à Monsieur PILAF de mieux gérer son magasin BIO. Cette aplication devait permettre de gérer les entrées et sorties
         de produits du magasin. De plus, nous devions faire un cahier des charges pour cette application.</p>
+
+        <br/>
+        <br/>
+        <p>Compétences développées : </p>
+        <ul>
+            <li>HTML5/CSS3</li>
+            <li>Analyse des attentes d'un client</li>
+            <li>Travail d'équipe</li>
+        </ul>
     </div>
 
     <div id="imageProjet">
@@ -43,6 +52,10 @@
         
         <div>
             <p><a href="https://github.com/k-ayrault/Magasin-Pilaf" style="text-decoration:none;color:white;"><img src="image/reseau/github.png" style="max-height:1em;"> Code</a></p>
+        </div>
+
+        <div>
+            <p><a href="/Projets/Magasin-Pilaf/index.html" style="text-decoration:none;color:white;"><img src="image/menu/apercu.png" style="max-height:1em;"> Aperçu</a></p>
         </div>
 
     </div>

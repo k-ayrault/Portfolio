@@ -12,6 +12,13 @@
             <th>Ville</th>
         </tr>
         <tr>
+            <td>2021</td>
+            <td><img src="image/Entreprise/cd87.png"> CD87</td>
+            <td>Stagiaire au CD87</td>
+            <td><img src="image/drapeau_fr.png"> France</td>
+            <td>Limoges</td>
+        </tr>
+        <tr>
             <td>2019-</td>
             <td><img src="image/Entreprise/univ_limoge.png"> Université de Limoges</td>
             <td>Etudiant DUT Informatique</td>

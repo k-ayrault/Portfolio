@@ -8,7 +8,7 @@
 
     switch ($page) {
         case "mails" : 
-            if(isset($_POST["plusdinfo"])) {
+            if(isset($_GET["mail"])) {
                 $_SESSION["plusdinfo"] = true;
             }
             include_once('pages/mail/mails.php');
@@ -32,8 +32,8 @@
             break;
         case "projet" : 
             include_once('pages/projets/projet_form.php');
-            if(isset($_POST["projet"])) {
-                include_once('pages/projets/'.$_POST["projet"].'.php');
+            if(isset($_GET["projet"])) {
+                include_once('pages/projets/'.$_GET["projet"].'.php');
             }
             break;
         case "evenement" :

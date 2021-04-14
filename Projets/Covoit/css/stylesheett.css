@@ -1,0 +1,252 @@
+a{
+	color:#222222;
+	text-decoration: none;
+}
+a:visited{
+	color:#222222;
+	text-decoration: none;
+}
+body{
+	background-color:#222222;;
+	font-family: "Segoe UI", Verdana, serif;
+	font-size:12pt;
+	margin:0;
+	padding:0;
+}
+
+#header{
+	width:100%;
+	height:230px;
+	background-color:#222222;
+	box-shadow:0 0 20px #000000;
+	border-bottom:solid #444444 8px;
+}
+.colonne {
+  display:table-cell;
+  padding:25px;
+}
+
+.colonne:nth-child(2) {
+	vertical-align:middle;
+	color:#CCCCCC;
+	font-size:32px;
+	font-weight:bold;
+	text-shadow:1px 1px #111111, 2px 2px #000000;
+}
+
+#entete{
+	width:1050px;
+	margin:auto;
+	display:table;
+}
+
+#connect{
+	margin-top: -3%;
+	margin-left:60%;
+	height:30px;
+	width:380px;
+	padding:10px;
+	right:30px;
+	top:25%;
+	background-color:#AAAAAA;
+	border-radius:10px;
+	border:4px solid #111111;
+	box-shadow:0 0 5px #000000 inset;
+	color:#222222;
+	font-size:18px;
+	text-align:center;
+}
+#connect a{
+	color:#222222;
+	font-weight:bold;
+	text-decoration: none;
+	text-shadow:0.5px 0.5px #111111, 0.5px 0.5px #000000;
+}
+
+
+
+#corps{
+	float:left;
+	width: 100%; 
+	background-color:#EDEDED;
+}
+
+#menu{
+	float : left;
+	width: 20%;
+	min-height:355px;
+	margin-left: 3px;
+	color:#222222;
+	font-size:15px;
+}
+#menu p{
+	font-weight:bold;
+}
+#menu a{
+	color:#222222;
+	text-decoration: none;
+}
+#menu a :visited{
+	color:#222222;
+	text-decoration: none;
+}
+
+#menuInt{
+	margin-top: 2px;
+	margin-left: 50px;
+	min-height:367px;
+}
+
+#texte{
+	float:left ;
+	width: 79%;
+	margin-left: 5px;
+	text-align: center;
+	min-height:380px;
+	color:#222222;
+}
+
+#spacer {
+  clear: both;
+}
+
+#footer{
+	width:100%;
+	height:50px;
+	padding-top:10px;
+	background-color:#222222;
+	border-top:solid #444444 8px;
+	padding-top:20px;
+	position:absolute;
+	bottom:0px;
+	box-shadow:0 -5px 5px #858585;
+	position:relative;
+	color:#CCCCCC;
+	font-size:12px;
+	text-align:center;
+}
+
+.centreImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%
+}
+
+label{
+	font-size:12pt;
+  font-weight:bold;
+}
+
+h1{
+	text-shadow:1px 1px 2px #333333;
+}
+
+
+* a:hover{
+
+	text-decoration: underline;
+}
+#menu a:hover{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#tableau {
+	margin-left: auto;
+  margin-right: auto;
+	border-collapse: collapse;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+#tableau td {
+	width: 30%;
+	border : 1px solid black;
+}
+#formulaire input {
+	border-radius:10px;
+	border:2px solid #111111;
+	box-shadow:0 0 2px #000000 inset;
+	background-color : #EDEDED;
+	color:#000000;
+	text-align: center;
+	font-weight:bold;
+	height: 23px;
+	width:15em;
+	margin: 0 auto;
+}
+#formulaire select {
+	background-color: #EDEDED;
+	border-radius:10px;
+	border:2px solid #111111;
+	height: 27px;
+	margin-left: 3em;
+	width: 15em;
+	margin: 0 auto;
+}
+
+#formulaire #submit {
+	background-color: #222222;
+	width: 12em;
+	color : #ffffff;
+	border-radius:6px;
+	height:40px;
+}
+
+#formulaire input[type=radio] {
+	width:2em;
+	vertical-align: bottom;
+	border: 0px;
+	height: 1.2em;
+	box-shadow: none;
+	margin-left: 1em;
+	background-color: black;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#calculConnexion img {
+	border:1px solid black;
+	margin-top: 5px;
+}
+
+#calculConnexion a {
+	font-weight: bold;
+	font-size: x-large;
+}

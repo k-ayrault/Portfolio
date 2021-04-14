@@ -80,13 +80,37 @@
                 
                 <h1>Compétences</h1>
 
-                <table>
+                <table> 
+                    <tr>
+                        <td>HTML5/CSS3</td>
+                        <td>
+                            <progress max="5" value="3.5"></progress>
+                        </td>
+                    </tr> 
                     <tr>
                         <td>PHP</td>
                         <td>
                             <progress max="5" value="4"></progress>
                         </td>
                     </tr> 
+                    <tr>
+                        <td>Node.JS</td>
+                        <td>
+                            <progress max="5" value="3.5"></progress>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>Javascript</td>
+                        <td>
+                            <progress max="5" value="3"></progress>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>SQL/MySQL</td>
+                        <td>
+                            <progress max="5" value="3"></progress>
+                        </td>
+                    </tr>
                     <tr>
                         <td>JAVA</td>
                         <td>
@@ -98,19 +122,7 @@
                         <td>
                             <progress max="5" value="2.5"></progress>
                         </td>
-                    </tr> 
-                    <tr>
-                        <td>HTML5/CSS3</td>
-                        <td>
-                            <progress max="5" value="3.5"></progress>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <td>SQL/MySQL</td>
-                        <td>
-                            <progress max="5" value="3"></progress>
-                        </td>
-                    </tr> 
+                    </tr>
 
                 </table>
 
@@ -141,8 +153,24 @@
 
                 <table>
                     <tr>
-                        <th>2020 -<a style="color:#d2a646"> En cours</a></th>
+                        <th>2021 -<a style="color:#d2a646"> En cours</a></th>
+                        <td><img src="image/projets/cr_photo.jpg"> Vitrine numérique d'un photographe</td>
+                    </tr>
+                    <tr>
+                        <th>2021 -<a style="color:#d2a646"> Fini</a></th>
+                        <td><img src="image/projets/vip.png"> Serveur WEB pour informer les lecteurs sur certains VIP</td>
+                    </tr>
+                    <tr>
+                        <th>2021 -<a style="color:#d2a646"> Fini</a></th>
+                        <td><img src="image/photo_CV.jpg"> Vitrine numérique personnelle</td>
+                    </tr>
+                    <tr>
+                        <th>2020/2021 -<a style="color:#d2a646"> Fini</a></th>
                         <td><img src="image/projets/legrand.png"> Application de suivi qualité</td>
+                    </tr>
+                    <tr>
+                        <th>2020 -<a style="color:#d2a646"> Fini</a></th>
+                        <td><img src="image/projets/covoit.png"> Site de covoiturage</td>
                     </tr>
                     <tr>
                         <th>2020 -<a style="color:#d2a646"> En cours</a></th>
@@ -167,6 +195,10 @@
 
 
                 <table>
+                    <tr>
+                        <th style="border-bottom : 1px solid grey;">2021</th>
+                        <td style="border-bottom : 1px solid grey;">Stage de 10 semaines à la Direction des Services d'Informations du Conseil Départemental de la Haute-Vienne</td>
+                    </tr>
                     <tr>
                         <th>2019</th>
                         <td>Certificat individuel de participation à la journée défense et citoyenneté</td>
@@ -216,6 +248,11 @@
                 </a>
 
                 <table>
+                    <tr>
+                        <td>2021</td>
+                        <td><img src="image/Entreprise/cd87.png"> CD87</td>
+                        <td id="poste">Stagiaire</td>
+                    </tr>
                     <tr>
                         <td>2019-</td>
                         <td><img src="image/Entreprise/univ_limoge.png"> Université de Limoges</td>

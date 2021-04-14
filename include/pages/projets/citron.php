@@ -12,6 +12,14 @@
         <br/>
         &emsp;&emsp;Nous devions réaliser une one-page afin de permettre aux passionés de citronnade de voir les prochains évènements de l'association COMBAVA et leur permettre 
         de s'inscrire à ces évènements. De plus cette one-page devait respecter une charte graphique fournit au préalable.</p>
+        <br/>
+        <br/>
+        <p>Compétences développées : </p>
+        <ul>
+            <li>HTML5/CSS3</li>
+            <li>Analyse des attentes d'un client</li>
+            <li>Travail d'équipe</li>
+        </ul>
     </div>
 
     <div id="imageProjet">
@@ -42,6 +50,10 @@
         
         <div>
             <p><a href="https://github.com/k-ayrault/Combava" style="text-decoration:none;color:white;"><img src="image/reseau/github.png" style="max-height:1em;"> Code</a></p>
+        </div>
+
+        <div>
+            <p><a href="/Projets/Combava/HTML/index.html" style="text-decoration:none;color:white;"><img src="image/menu/apercu.png" style="max-height:1em;"> Aperçu</a></p>
         </div>
 
     </div>
