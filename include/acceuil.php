@@ -42,8 +42,13 @@
                 <h2 style='color:white;'>Kévin AYRAULT !</h2>
             </div>
             <div id="boutton_charger">
-                    <button name="charge" onclick="move();">Charger le portfolio</button> 
+                    <button name="charge" onclick="move();">Charger le portfolio</button>
+                    <br/>
+                    <br/>
+                    <button onclick="window.location='index.php?choix=choix'">Quitter le portfolio</button>
+                    
             </div>
+            
             <div id="reseau" style='position:absolute;bottom:0'>
             
                 <div id="reseaux" >
