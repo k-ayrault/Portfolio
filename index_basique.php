@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Titre de la page</title>
+  <title>AYRAULT Kévin</title>
+  <link rel="icon" href="image/photo_CV.jpg">
   <link rel="stylesheet" href="css/style_basique.css"><script
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

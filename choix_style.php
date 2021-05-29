@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Titre de la page</title>
+  <link rel="icon" href="image/photo_CV.jpg">
+  <title>Bienvenue sur mon portfolio !</title>
   <style>
     html {
         height:100%;
