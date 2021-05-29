@@ -492,8 +492,8 @@ h1,h2 {
     text-align: justify;
 }
 .projet img {
-    max-height: 70%;
-    max-width: 80%;
+    max-height: 8em;
+    max-width: 90%;
 }
 
 .projet table, tbody, tr, td {
