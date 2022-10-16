@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Personne} from "../models/personne.models";
+import {PersonneService} from "../services/personne.service";
 
 @Component({
   selector: 'app-accueil',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accueil.component.scss']
 })
 export class AccueilComponent implements OnInit {
+  personne!:Personne;
 
-  constructor() { }
+  constructor(private personneService:PersonneService) { }
 
   ngOnInit(): void {
+    this.personne = this.personneService.getPersonne();
   }
 
 }

@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Personne} from "../models/personne.models";
+import {PersonneService} from "../services/personne.service";
 
 @Component({
   selector: 'app-header',
@@ -8,11 +9,12 @@ import {Personne} from "../models/personne.models";
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() personne!:Personne;
+  personne!:Personne;
 
-  constructor() { }
+  constructor(private personneService:PersonneService) { }
 
   ngOnInit(): void {
+    this.personne = this.personneService.getPersonne();
   }
 
 }
