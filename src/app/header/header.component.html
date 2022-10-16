@@ -1,0 +1,19 @@
+<div class="header">
+  <div class="header-tittle">
+    <div class="header-tittle-img">
+      <img [src]="personne.img" [alt]="personne.nom">
+    </div>
+    <div class="">
+      <h1>{{ personne.nom | uppercase }} {{ personne.prenom | titlecase }}</h1>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <ul class="header-nav-list">
+      <li class="header-nav-item header-nav-item-active">Accueil</li>
+      <li class="header-nav-item">Présentation</li>
+      <li class="header-nav-item">Mes projets</li>
+      <li class="header-nav-item">Contact</li>
+    </ul>
+  </nav>
+</div>
