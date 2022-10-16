@@ -8,6 +8,9 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ProjetsComponent } from './projets/projets.component';
 import { ContactComponent } from './contact/contact.component';
+import { PresentationAboutComponent } from './presentation-about/presentation-about.component';
+import { PresentationSkillsComponent } from './presentation-skills/presentation-skills.component';
+import { PresentationParcoursComponent } from './presentation-parcours/presentation-parcours.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ContactComponent } from './contact/contact.component';
     AccueilComponent,
     PresentationComponent,
     ProjetsComponent,
-    ContactComponent
+    ContactComponent,
+    PresentationAboutComponent,
+    PresentationSkillsComponent,
+    PresentationParcoursComponent
   ],
   imports: [
     BrowserModule,

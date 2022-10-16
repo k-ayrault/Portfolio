@@ -1,1 +1,18 @@
-<p>presentation works!</p>
+<div class="presentation-content" (wheel)="onScroll($event)" >
+  <div class="presentation-pages">
+    <div class="presentation-page" id="presentation-skills">
+      <app-presentation-skills></app-presentation-skills>
+    </div>
+    <div class="presentation-page presentation-page-active" id="presentation-about">
+      <app-presentation-about></app-presentation-about>
+    </div>
+    <div class="presentation-page" id="presentation-parcours">
+      <app-presentation-parcours></app-presentation-parcours>
+    </div>
+  </div>
+  <div class="presentation-indicator">
+    <span class="dot" data-page="presentation-skills"></span>
+    <span class="dot dot-active" data-page="presentation-about"></span>
+    <span class="dot" data-page="presentation-parcours"></span>
+  </div>
+</div>
