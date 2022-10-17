@@ -1,1 +1,50 @@
-<p>presentation-skills works!</p>
+<div class="competences-content">
+  <div class="competences-type" id="competences-back">
+    <div class="competences-type-titre">
+      <h1>Back</h1>
+    </div>
+    <div class="liste-competences">
+      <img *ngFor="let competence of competences.back" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    </div>
+  </div>
+  <div class="competences-type" id="competences-front">
+    <div class="competences-type-titre">
+      <h1>Front</h1>
+    </div>
+    <div class="liste-competences">
+      <img *ngFor="let competence of competences.front" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    </div>
+  </div>
+  <div class="competences-type" id="competences-donnees">
+    <div class="competences-type-titre">
+      <h1>Données</h1>
+    </div>
+    <div class="liste-competences">
+      <img *ngFor="let competence of competences.donnees" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    </div>
+  </div>
+  <div class="competences-type" id="competences-autres">
+    <div class="competences-type-titre">
+      <h1>Autres</h1>
+    </div>
+    <div class="liste-competences">
+      <img *ngFor="let competence of competences.autres" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    </div>
+  </div>
+  <div class="competences-type" id="competences-outils">
+    <div class="competences-type-titre">
+      <h1>Outils</h1>
+    </div>
+    <div class="liste-competences">
+      <img *ngFor="let competence of competences.outils" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    </div>
+  </div>
+  <div class="competences-type" id="competences-logiciels">
+    <div class="competences-type-titre">
+      <h1>Logiciels</h1>
+    </div>
+    <div class="liste-competences">
+      <img *ngFor="let competence of competences.logiciels" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    </div>
+  </div>
+</div>

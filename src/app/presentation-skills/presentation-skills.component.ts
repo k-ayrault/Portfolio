@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {PersonneService} from "../services/personne.service";
+import {Competences} from "../models/competences.models";
 
 @Component({
   selector: 'app-presentation-skills',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentationSkillsComponent implements OnInit {
 
-  constructor() { }
+  competences!:Competences;
+  constructor(private personneService:PersonneService) { }
 
   ngOnInit(): void {
+    this.competences = this.personneService.getCompetences();
   }
 
 }
