@@ -50,6 +50,12 @@
 }
 
 @media (max-width: 992px) {
+  .competences-type-titre {
+    font-size: 0.8em;
+    height: 1.6em;
+    margin: 0;
+  }
+
   .img-competence {
     max-width: 60px;
     max-height: 60px;
@@ -64,5 +70,22 @@
 }
 
 @media (max-width: 576px) {
+  .competences-type {
+    width: 100%;
+    height: calc(100% / 6);
+  }
+
+  .liste-competences {
+    min-height: calc(100% - 1.6em - 1em);
+    max-height: calc(100% - 1.6em - 1em);
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .img-competence {
+    max-width: 40px;
+    max-height: 40px;
+  }
 }
 
