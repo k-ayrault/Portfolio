@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PresentationAboutComponent } from './presentation-about/presentation-about.component';
 import { PresentationSkillsComponent } from './presentation-skills/presentation-skills.component';
 import { PresentationParcoursComponent } from './presentation-parcours/presentation-parcours.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PresentationParcoursComponent } from './presentation-parcours/presentat
     ContactComponent,
     PresentationAboutComponent,
     PresentationSkillsComponent,
-    PresentationParcoursComponent
+    PresentationParcoursComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

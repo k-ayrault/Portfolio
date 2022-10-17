@@ -1,4 +1,5 @@
 import {Competences} from "./competences.models";
+import {Experience} from "./experience.models";
 
 export class Personne {
   nom!:string;
@@ -7,4 +8,5 @@ export class Personne {
   age!:number;
   metier!:string;
   competences!:Competences;
+  experiences!:Experience[];
 }

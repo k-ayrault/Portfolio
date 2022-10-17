@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Experience} from "../models/experience.models";
+import {PersonneService} from "../services/personne.service";
 
 @Component({
   selector: 'app-presentation-parcours',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./presentation-parcours.component.scss']
 })
 export class PresentationParcoursComponent implements OnInit {
+  experiences!:Experience[];
 
-  constructor() { }
+  constructor(private personneService:PersonneService) { }
 
   ngOnInit(): void {
+    this.experiences = this.personneService.getParcours();
   }
 
 }
