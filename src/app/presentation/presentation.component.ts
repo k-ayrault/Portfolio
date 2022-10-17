@@ -88,13 +88,15 @@ export class PresentationComponent implements OnInit {
 
   private changeActivePage(elementActive: HTMLElement, nextActiveElement: HTMLElement) {
     if (nextActiveElement) {
-      nextActiveElement.classList.add(this.activePageClassName);
       elementActive?.classList.remove(this.activePageClassName);
+      nextActiveElement.classList.add(this.activePageClassName);
       let dotActive = document.querySelector('.dot-active');
       if (dotActive) {
         let nextDotActive = document.querySelector('span[class=dot][data-page="' + nextActiveElement.id + '"]');
-        nextDotActive?.classList.add('dot-active');
-        dotActive.classList.remove('dot-active');
+        if (nextDotActive) {
+          dotActive.classList.remove('dot-active');
+          nextDotActive?.classList.add('dot-active');
+        }
       }
     }
   }
