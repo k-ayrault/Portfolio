@@ -1,4 +1,4 @@
-<div class="presentation-content" (wheel)="onScroll($event)" >
+<div class="presentation-content" (wheel)="onScroll($event)" (touchstart)="handleTouchStart($event)" (touchend)="handleTouchMove($event)">
   <div class="presentation-pages">
     <div class="presentation-page" id="presentation-skills">
       <app-presentation-skills></app-presentation-skills>
@@ -11,8 +11,8 @@
     </div>
   </div>
   <div class="presentation-indicator">
-    <span class="dot" data-page="presentation-skills"></span>
-    <span class="dot dot-active" data-page="presentation-about"></span>
-    <span class="dot" data-page="presentation-parcours"></span>
+    <span class="dot" data-page="presentation-skills" (click)="onClickDotChangeActivePage($event)" title="Mes compétences"></span>
+    <span class="dot dot-active" data-page="presentation-about" (click)="onClickDotChangeActivePage($event)" title="Présentation"></span>
+    <span class="dot" data-page="presentation-parcours" (click)="onClickDotChangeActivePage($event)" title="Mon parcours"></span>
   </div>
 </div>
