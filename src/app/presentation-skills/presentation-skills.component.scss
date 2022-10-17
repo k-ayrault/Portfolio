@@ -6,15 +6,23 @@
 }
 
 .competences-type {
-  width: 50%;
+  width: calc(50% - 0.5px);
   height: calc(100% / 3);
   overflow: hidden;
 }
 
+.competences-type:nth-child(2),
+.competences-type:nth-child(3),
+.competences-type:nth-child(6), {
+  background-color: rgb(200,209,222, 0.25);
+}
+
 .competences-type-titre {
-  margin-bottom: 0.5em;
   width: 100%;
   display: flex;
+  font-size: 1em;
+  height: 2em;
+  margin-top: 1em;
   justify-content: center;
   align-items: center;
 }
@@ -25,9 +33,10 @@
 
 .liste-competences {
   width: 100%;
-  min-height: calc(75px * 2);
+  height: calc(100% - 3em);
   overflow: hidden;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -42,6 +51,7 @@
 }
 
 
+
 @media (max-width: 1400px) {
 
 }
@@ -53,7 +63,10 @@
   .competences-type-titre {
     font-size: 0.8em;
     height: 1.6em;
-    margin: 0;
+  }
+
+  .liste-competences {
+    height: calc(100% - 1.6em - 1em);
   }
 
   .img-competence {
@@ -63,21 +76,21 @@
 }
 
 @media (max-width: 768px) {
-  .competences-content {
-    margin: 0 5vw;
-    width: calc(100% - 2 * 5vw);
-  }
 }
 
 @media (max-width: 576px) {
   .competences-type {
     width: 100%;
     height: calc(100% / 6);
+    background-color: transparent!important;
+  }
+
+  .competences-type:nth-child(2n) {
+    background-color: rgb(200,209,222, 0.25) !important;
   }
 
   .liste-competences {
-    min-height: calc(100% - 1.6em - 1em);
-    max-height: calc(100% - 1.6em - 1em);
+    height: calc(100% - 1.6em - 1em - 1em);
     margin-top: 1em;
     display: flex;
     justify-content: space-evenly;
