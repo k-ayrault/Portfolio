@@ -3,11 +3,11 @@ import {PersonneService} from "../services/personne.service";
 import {Competences} from "../models/competences.models";
 
 @Component({
-  selector: 'app-presentation-skills',
-  templateUrl: './presentation-skills.component.html',
-  styleUrls: ['./presentation-skills.component.scss']
+  selector: 'app-presentation-a-skills',
+  templateUrl: './competences.component.html',
+  styleUrls: ['./competences.component.scss']
 })
-export class PresentationSkillsComponent implements OnInit {
+export class CompetencesComponent implements OnInit {
 
   competences!:Competences;
   constructor(private personneService:PersonneService) { }

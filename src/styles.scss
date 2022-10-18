@@ -2,8 +2,12 @@
 html, body {
   padding:0;
   margin: 0;
+  min-height: 100vh;
+  background-color: rgb(200,209,222, 0.25);
 }
 
 * {
   font-family: Sora-Regular,sans-serif;
 }
+
+$header-bg: rgb(200,209,222);

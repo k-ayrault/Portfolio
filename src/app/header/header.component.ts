@@ -8,7 +8,7 @@ import {PersonneService} from "../services/personne.service";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  navClose: Boolean = false;
   personne!:Personne;
 
   constructor(private personneService:PersonneService) { }

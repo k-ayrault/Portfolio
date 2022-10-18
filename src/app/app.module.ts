@@ -8,9 +8,8 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ProjetsComponent } from './projets/projets.component';
 import { ContactComponent } from './contact/contact.component';
-import { PresentationAboutComponent } from './presentation-about/presentation-about.component';
-import { PresentationSkillsComponent } from './presentation-skills/presentation-skills.component';
-import { PresentationParcoursComponent } from './presentation-parcours/presentation-parcours.component';
+import { CompetencesComponent } from './competences/competences.component';
+import { ParcoursComponent } from './parcours/parcours.component';
 import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
@@ -21,9 +20,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     PresentationComponent,
     ProjetsComponent,
     ContactComponent,
-    PresentationAboutComponent,
-    PresentationSkillsComponent,
-    PresentationParcoursComponent,
+    CompetencesComponent,
+    ParcoursComponent,
     TimelineComponent
   ],
   imports: [

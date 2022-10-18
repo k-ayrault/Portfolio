@@ -11,6 +11,7 @@ export class PersonneService {
     nom: "Ayrault",
     prenom: "Kévin",
     img: "../assets/Images/photo.jpg",
+    dateNaissance: new Date(2001,9,26),
     age: this.getAge(new Date(2001, 9, 26)),
     metier: "Développeur Web",
     competences: {

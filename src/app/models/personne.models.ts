@@ -5,6 +5,7 @@ export class Personne {
   nom!:string;
   prenom!:string;
   img!:string;
+  dateNaissance!:Date;
   age!:number;
   metier!:string;
   competences!:Competences;

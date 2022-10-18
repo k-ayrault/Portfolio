@@ -7,7 +7,10 @@
   </div>
 </div>
 
-<nav class="header-nav">
+<div class="header-nav-close-open" (click)="navClose = !navClose" [ngClass]="{ 'close': navClose }">
+</div>
+
+<nav class="header-nav" [ngClass]="{ 'nav-open': navClose }">
   <ul class="header-nav-list">
     <li class="header-nav-item">
       <a class="header-nav-link" routerLink="" routerLinkActive="header-nav-item-active"
@@ -19,6 +22,18 @@
       <a class="header-nav-link" routerLink="/presentation" routerLinkActive="header-nav-item-active"
          [routerLinkActiveOptions]="{ exact: true }">
         Présentation
+      </a>
+    </li>
+    <li class="header-nav-item">
+      <a class="header-nav-link" routerLink="/parcours" routerLinkActive="header-nav-item-active"
+         [routerLinkActiveOptions]="{ exact: true }">
+        Parcours
+      </a>
+    </li>
+    <li class="header-nav-item">
+      <a class="header-nav-link" routerLink="/competences" routerLinkActive="header-nav-item-active"
+         [routerLinkActiveOptions]="{ exact: true }">
+        Compétences
       </a>
     </li>
     <li class="header-nav-item">

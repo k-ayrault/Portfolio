@@ -3,11 +3,11 @@ import {Experience} from "../models/experience.models";
 import {PersonneService} from "../services/personne.service";
 
 @Component({
-  selector: 'app-presentation-parcours',
-  templateUrl: './presentation-parcours.component.html',
-  styleUrls: ['./presentation-parcours.component.scss']
+  selector: 'app-parcours',
+  templateUrl: './parcours.component.html',
+  styleUrls: ['./parcours.component.scss']
 })
-export class PresentationParcoursComponent implements OnInit {
+export class ParcoursComponent implements OnInit {
   experiences!:Experience[];
 
   constructor(private personneService:PersonneService) { }
