@@ -8,7 +8,7 @@ import {PersonneService} from "../services/personne.service";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  navClose: Boolean = false;
+  navOpen: Boolean = false;
   personne!:Personne;
 
   constructor(private personneService:PersonneService) { }
@@ -17,4 +17,9 @@ export class HeaderComponent implements OnInit {
     this.personne = this.personneService.getPersonne();
   }
 
+  closeMenuOnChangePage() {
+    if (this.navOpen) {
+      this.navOpen = false;
+    }
+  }
 }

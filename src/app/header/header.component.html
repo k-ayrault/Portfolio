@@ -7,44 +7,44 @@
   </div>
 </div>
 
-<div class="header-nav-close-open" (click)="navClose = !navClose" [ngClass]="{ 'close': navClose }">
+<div class="header-nav-close-open" (click)="navOpen = !navOpen" [ngClass]="{ 'close': navOpen }">
 </div>
 
-<nav class="header-nav" [ngClass]="{ 'nav-open': navClose }">
+<nav class="header-nav" [ngClass]="{ 'nav-open': navOpen }">
   <ul class="header-nav-list">
     <li class="header-nav-item">
       <a class="header-nav-link" routerLink="" routerLinkActive="header-nav-item-active"
-         [routerLinkActiveOptions]="{ exact: true }">
+         [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Accueil
       </a>
     </li>
     <li class="header-nav-item">
       <a class="header-nav-link" routerLink="/presentation" routerLinkActive="header-nav-item-active"
-         [routerLinkActiveOptions]="{ exact: true }">
+         [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Présentation
       </a>
     </li>
     <li class="header-nav-item">
       <a class="header-nav-link" routerLink="/parcours" routerLinkActive="header-nav-item-active"
-         [routerLinkActiveOptions]="{ exact: true }">
+         [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Parcours
       </a>
     </li>
     <li class="header-nav-item">
       <a class="header-nav-link" routerLink="/competences" routerLinkActive="header-nav-item-active"
-         [routerLinkActiveOptions]="{ exact: true }">
+         [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Compétences
       </a>
     </li>
     <li class="header-nav-item">
       <a class="header-nav-link" routerLink="/projets" routerLinkActive="header-nav-item-active"
-         [routerLinkActiveOptions]="{ exact: true }">
+         [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Mes projets
       </a>
     </li>
     <li class="header-nav-item">
       <a class="header-nav-link" routerLink="/contact" routerLinkActive="header-nav-item-active"
-         [routerLinkActiveOptions]="{ exact: true }">
+         [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Contact</a>
     </li>
   </ul>
