@@ -119,6 +119,14 @@ export class PersonneService {
         pays: '🇫🇷',
         descr: 'Alternance en complément de ma Licence Professionnelle - Développeur d\'applications Web et Big Data où mon projet principal était le développement et l\'évolution d\'une application web traitant la gestion des demandes d\'accès physique des zones à régimes restrictifs des laboratoires de l\'Université de Limoges'
       }
+    ],
+    contacts: [
+      {
+        type: "Téléphone", valeur: "07-60-58-64-02"
+      },
+      {
+        type: "E-mail", valeur: "kevin.ayrault87@gmail.com"
+      }
     ]
   };
 

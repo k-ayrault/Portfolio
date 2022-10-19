@@ -1,5 +1,6 @@
 import {Competences} from "./competences.models";
 import {Experience} from "./experience.models";
+import {Contact} from "./contact.models";
 
 export class Personne {
   nom!:string;
@@ -10,4 +11,5 @@ export class Personne {
   metier!:string;
   competences!:Competences;
   experiences!:Experience[];
+  contacts!:Contact[];
 }
