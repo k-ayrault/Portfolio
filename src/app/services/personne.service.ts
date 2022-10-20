@@ -11,10 +11,14 @@ export class PersonneService {
     nom: "Ayrault",
     prenom: "Kévin",
     img: "../assets/Images/photo.jpg",
-    dateNaissance: new Date(2001,9,26),
-    age: this.getAge(new Date(2001, 9, 26)),
+    dateNaissance: new Date(2001,8,26),
+    age: this.getAge(new Date(2001, 8, 26)),
     situation: "Actuellement en recherche d'un premier emploi dans le domaine du développement web (Back-End/Full-Stack)" +
       " à la suite de l'obtention de ma licence professionnelle - Développeur d'applications Web et Big Data.",
+    ville: {
+      nom: "Limoges",
+      pays: "🇫🇷"
+    },
     niveauEtude: {
       niveau: "Bac +3", nomDiplome: "Licence Professionnelle - Développeur d'applications Web et Big Data",
     },

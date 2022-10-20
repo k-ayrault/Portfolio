@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 import { CompetencesComponent } from './competences/competences.component';
 import { ParcoursComponent } from './parcours/parcours.component';
 import { TimelineComponent } from './timeline/timeline.component';
+
+import * as fr from '@angular/common/locales/fr';
+import {registerLocaleData} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -28,7 +31,13 @@ import { TimelineComponent } from './timeline/timeline.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr-FR'}
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    registerLocaleData(fr.default)
+  }
+}

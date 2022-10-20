@@ -1,0 +1,92 @@
+.presentation {
+  padding-top: 1em;
+  width: 100%;
+  max-height: calc(100% - 1em);
+  display: flex;
+  flex-wrap: wrap;
+}
+.presentation-info {
+  width: 100%;
+  max-height: fit-content;
+  display: flex;
+}
+
+.presentation-info-img {
+  width: 25%;
+  background-size: cover;
+  background-position: center;
+}
+
+.presentation-info-content {
+  width: calc(75% - 2em);
+  margin: 0 1em;
+}
+
+.presentation-info-content>* {
+  margin: 0;
+}
+
+.presentation-info-content-tittle {
+  font-size: 2em;
+}
+
+.presentation-info-content-metier {
+  font-size: 0.75em;
+}
+
+.presentation-info-content-situation {
+  margin-top: 1em!important;
+  font-size: 1em;
+}
+
+.presentation-info-content-donnees {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em!important;
+}
+
+.donnees-content {
+  width: calc(50% - 1em);
+  padding: 0 0.5em;
+  margin-top: 0.5em;
+}
+
+.donnees-content>.tittle-donnees {
+  margin: 0;
+}
+
+.donnees-content>.tittle-donnees>.donnees {
+  font-weight: normal!important;
+}
+
+.info-niveau-etude {
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  height: 0.9em;
+  width: 0.9em;
+}
+
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .presentation {
+    padding: 0 1em;
+    width: calc(100% - 2em);
+  }
+}
+
+@media (max-width: 576px) {
+}
+
