@@ -22,7 +22,8 @@ export class PersonneService {
     niveauEtude: {
       niveau: "Bac +3", nomDiplome: "Licence Professionnelle - Développeur d'applications Web et Big Data",
     },
-    description: "",
+    description: "Passioné par le développement web, je me suis professionnalisé durant ma licence professionnelle - " +
+      "développement d'applications web et big data ...",
     metier: "Développeur Web",
     competences: {
       back: [

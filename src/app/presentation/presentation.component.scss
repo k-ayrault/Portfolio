@@ -37,6 +37,7 @@
 .presentation-info-content-situation {
   margin-top: 1em!important;
   font-size: 1em;
+  text-align: justify;
 }
 
 .presentation-info-content-donnees {
@@ -44,6 +45,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 1em!important;
+  padding-bottom: 1em;
 }
 
 .donnees-content {
@@ -68,13 +70,22 @@
   width: 0.9em;
 }
 
+.presentation-descr {
+  margin: 1em 1em;
+}
 
 @media (max-width: 1400px) {
 
 }
 
 @media (max-width: 1200px) {
+  .presentation-info-content-tittle {
+    font-size: 1.75em;
+  }
 
+  .presentation>* {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 992px) {
@@ -88,5 +99,22 @@
 }
 
 @media (max-width: 576px) {
+
+  .presentation {
+    padding-top: 1em;
+  }
+
+  .presentation-info-img {
+    display: none;
+  }
+
+  .presentation-info-content {
+    width: calc(100% - 2em);
+  }
+
+  .presentation-info-content-donnees {
+    border-bottom: 1px solid rgb(0,0,0, 0.25);
+    border-top: 1px solid rgb(0,0,0, 0.25);
+  }
 }
 
