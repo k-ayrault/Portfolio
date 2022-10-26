@@ -1,3 +1,66 @@
+<!--<div class="presentation">-->
+<!--  <div class="presentation-info">-->
+<!--    <div class="presentation-info-img" [ngStyle]="{'background-image': 'url('+personne.img+')'}">-->
+<!--    </div>-->
+
+<!--    <div class="presentation-info-content">-->
+<!--      <h1 class="presentation-info-content-tittle">-->
+<!--        {{ personne.nom | uppercase }} {{ personne.prenom | titlecase }} - -->
+<!--        <span class="presentation-info-content-metier">{{ personne.metier }}</span>-->
+<!--      </h1>-->
+<!--      <p class="presentation-info-content-situation">{{ personne.situation }}</p>-->
+
+<!--      <div class="presentation-info-content-donnees">-->
+<!--        <div class="donnees-content">-->
+<!--          <h4 class="tittle-donnees">-->
+<!--            Date de naissance :-->
+<!--            <span class="donnees">-->
+<!--              {{ personne.dateNaissance | date: 'd MMMM yyyy' }} ({{ personne.age }} ans)-->
+<!--            </span>-->
+<!--          </h4>-->
+<!--        </div>-->
+<!--        <div class="donnees-content">-->
+<!--          <h4 class="tittle-donnees">-->
+<!--            Niveau d'étude :-->
+<!--            <span class="donnees">-->
+<!--              {{ personne.niveauEtude.niveau }}-->
+<!--            </span>-->
+<!--            <span class="info-niveau-etude" [title]="personne.niveauEtude.nomDiplome"-->
+<!--                  style="background-image: url('./assets/Images/icones/info.svg')"></span>-->
+<!--          </h4>-->
+<!--        </div>-->
+
+<!--        <div class="donnees-content" *ngFor="let contact of personne.contacts">-->
+<!--          <h4 class="tittle-donnees">-->
+<!--            {{ contact.type }} :-->
+<!--            <span class="donnees">-->
+<!--              {{ contact.valeur }}-->
+<!--            </span>-->
+<!--          </h4>-->
+<!--        </div>-->
+
+
+<!--        <div class="donnees-content">-->
+<!--          <h4 class="tittle-donnees">-->
+<!--            Ville :-->
+<!--            <span class="donnees">-->
+<!--              {{ personne.ville.nom }}-->
+<!--            </span>-->
+<!--            <span class="pays-ville">-->
+<!--              {{ personne.ville.pays }}-->
+<!--            </span>-->
+<!--          </h4>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <div class="presentation-descr">-->
+<!--    <p>{{ personne.description }}</p>-->
+<!--  </div>-->
+<!--</div>-->
+
 <div class="presentation">
   <div class="presentation-info">
     <div class="presentation-info-img" [ngStyle]="{'background-image': 'url('+personne.img+')'}">
@@ -5,10 +68,9 @@
 
     <div class="presentation-info-content">
       <h1 class="presentation-info-content-tittle">
-        {{ personne.nom | uppercase }} {{ personne.prenom | titlecase }} -
-        <span class="presentation-info-content-metier">{{ personne.metier }}</span>
+        {{ personne.nom | uppercase }} {{ personne.prenom | titlecase }}
       </h1>
-      <p class="presentation-info-content-situation">{{ personne.situation }}</p>
+      <h3>{{ personne.metier }}</h3>
 
       <div class="presentation-info-content-donnees">
         <div class="donnees-content">
@@ -24,9 +86,9 @@
             Niveau d'étude :
             <span class="donnees">
               {{ personne.niveauEtude.niveau }}
+              <span class="info-niveau-etude" [title]="personne.niveauEtude.nomDiplome"
+                    style="background-image: url('./assets/Images/icones/info.svg')"></span>
             </span>
-            <span class="info-niveau-etude" [title]="personne.niveauEtude.nomDiplome"
-                  style="background-image: url('./assets/Images/icones/info.svg')"></span>
           </h4>
         </div>
 
@@ -45,9 +107,10 @@
             Ville :
             <span class="donnees">
               {{ personne.ville.nom }}
-            </span>
-            <span class="pays-ville">
-              {{ personne.ville.pays }}
+
+              <span class="pays-ville">
+                {{ personne.ville.pays }}
+              </span>
             </span>
           </h4>
         </div>
@@ -57,6 +120,8 @@
   </div>
 
   <div class="presentation-descr">
+    <h1>À propos</h1>
+    <p>{{ personne.situation }}</p>
     <p>{{ personne.description }}</p>
   </div>
 </div>
