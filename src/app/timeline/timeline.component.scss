@@ -51,6 +51,21 @@ p {
   align-items: center;
 }
 
+.timeline-diplome {
+  background-image: url("../../assets/Images/icones/diplome.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.timeline-travail {
+  background-image: url("../../assets/Images/icones/travail.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .timeline-content {
   max-width: calc(100% - 100px - 100px - 2px);
   width: calc(100% - 100px - 100px - 2px);
@@ -101,17 +116,11 @@ p {
   justify-content: center;
 }
 
-.timeline-content-show-hide>img,
-.timeline-icon>img {
-  height: calc(98px * 0.75);
-}
-
-.timeline-content-show>img {
-  transform: rotate(0deg);
-}
-
-.timeline-content-hide>img{
-  transform: rotate(180deg);
+.show-hide {
+  background-image: url("../../assets/Images/icones/show-hide.svg");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1400px) {

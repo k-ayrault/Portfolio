@@ -1,8 +1,6 @@
 <div class="timeline" [ngClass]="{ 'timeline-odd': position % 2 == 0, 'timeline-even': position % 2 != 0 }"
      (click)="experience.descr != '' && showHideDescr($event)" [title]="experience.nom">
-  <div class="timeline-icon">
-    <img [src]="experience.diplome ? 'assets/Images/icones/diplome.png' : 'assets/Images/icones/travail.png' "
-         [alt]="experience.diplome ? 'Diplôme' : 'Travail'">
+  <div class="timeline-icon" [ngClass]="{ 'timeline-diplome': experience.diplome, 'timeline-travail': !experience.diplome }">
   </div>
   <div class="timeline-content">
     <div class="timeline-content-tittre" >
@@ -25,7 +23,6 @@
       </p>
     </div>
   </div>
-  <div class="timeline-content-show-hide timeline-content-show">
-    <img *ngIf="experience.descr != ''" src="assets/Images/icones/show_hide.png" alt="Show/Hide">
+  <div class="timeline-content-show-hide timeline-content-show" [ngClass]="{ 'show-hide': experience.descr }">
   </div>
 </div>
