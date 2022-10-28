@@ -14,6 +14,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 
 import * as fr from '@angular/common/locales/fr';
 import {registerLocaleData} from "@angular/common";
+import { ProjetComponent } from './projet/projet.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {registerLocaleData} from "@angular/common";
     ContactComponent,
     CompetencesComponent,
     ParcoursComponent,
-    TimelineComponent
+    TimelineComponent,
+    ProjetComponent
   ],
   imports: [
     BrowserModule,

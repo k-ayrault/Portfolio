@@ -1,0 +1,66 @@
+.card-projet {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.card-projet-info {
+  height: 50%;
+  width: 100%;
+  align-self: flex-end;
+  background-color: rgba(200, 209, 222, 0.75);
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 500ms ease-out;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-projet-info>* {
+  margin: 0;
+}
+
+.card-projet:hover>.card-projet-info {
+  height: 100%;
+  background-color: rgba(200, 209, 222, 0.9);
+  overflow: hidden;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card-projet:hover>.card-projet-info>.card-projet-info-presentation {
+  display: block;
+}
+
+.card-projet-info-presentation {
+  display: none;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.card-projet-info-technos {
+  width: 100%;
+  display: flex;
+}
+
+.card-projet-info-technos>.card-projet-info-technos-techno {
+  margin-right: 0.5em;
+  padding: 0.25em 1em;
+  font-size: 0.95em;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 10px;
+}

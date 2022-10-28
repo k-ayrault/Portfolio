@@ -1,0 +1,13 @@
+<div class="card-projet" [ngStyle]="{'background-image': 'url(\'' + projet.couverture+ '\')' }">
+  <div class="card-projet-info">
+    <h4 class="card-projet-info-titre">{{projet.titre}}</h4>
+    <h4 class="card-projet-info-date">{{ projet.debut | date: "YYYY"}}
+      <span *ngIf="projet.debut.getFullYear() != projet.fin.getFullYear()">- {{ (projet.fin !== null) ? (projet.fin | date: "Y") : "..."}}</span></h4>
+
+    <p class="card-projet-info-presentation">{{projet.presentation}}</p>
+
+    <div class="card-projet-info-technos">
+      <div class="card-projet-info-technos-techno" *ngFor="let techno of projet.technologies">{{ techno.nom}}</div>
+    </div>
+  </div>
+</div>

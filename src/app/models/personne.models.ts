@@ -3,6 +3,7 @@ import {Experience} from "./experience.models";
 import {Contact} from "./contact.models";
 import {NiveauEtude} from "./niveau-etude.models";
 import {Ville} from "./ville.models";
+import {Projet} from "./projet.models";
 
 export class Personne {
   nom!:string;
@@ -18,4 +19,5 @@ export class Personne {
   competences!:Competences;
   experiences!:Experience[];
   contacts!:Contact[];
+  projets!: Projet[];
 }

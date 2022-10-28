@@ -1,1 +1,8 @@
-<p>projets works!</p>
+<div id="projets">
+  <div class="title-projet">
+    <h1>Mes projets</h1>
+  </div>
+  <div class="liste-projets">
+    <app-projet *ngFor="let projet of projets" [projet]="projet" class="choice-projet"></app-projet>
+  </div>
+</div>

@@ -2,6 +2,7 @@ import {Injectable} from "@angular/core";
 import {Personne} from "../models/personne.models";
 import {Competences} from "../models/competences.models";
 import {Experience} from "../models/experience.models";
+import {Projet} from "../models/projet.models";
 
 @Injectable({
   providedIn: 'root'
@@ -138,6 +139,29 @@ export class PersonneService {
       {
         type: "E-mail", valeur: "kevin.ayrault87@gmail.com"
       }
+    ],
+    projets: [
+      {
+        id: 1,
+        debut: new Date(2021,8,1),
+        fin: new Date(2022,6,31),
+        couverture: "../assets/Images/back/php.png",
+        titre: "Développement d'une application de gestion de demande d'accès",
+        presentation: "L'Université de Limoges possédant des zones à régimes restrictifs nécessitant une demande d'accès avant de permettre à une personne d'y pénétrer, ...",
+        description: "",
+        images: [],
+        technologies: [
+          {
+            nom: "PHP", image: "../assets/Images/back/php.png"
+          }
+        ],
+        collaborateurs: [
+          {
+            nom: "SOUILAH", prenom: "Marc", site: ""
+          }
+        ],
+        reseaux: []
+      },
     ]
   };
 
@@ -151,6 +175,10 @@ export class PersonneService {
 
   getParcours(): Experience[] {
     return this.personne.experiences.sort((a,b) => b.annees[0] - a.annees[0]);
+  }
+
+  getProjets(): Projet[] {
+    return this.personne.projets;
   }
 
   private getAge(aniv: Date) {
