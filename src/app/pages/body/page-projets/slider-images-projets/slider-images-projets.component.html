@@ -1,0 +1,8 @@
+<div class="presentation-projet__body__sliders">
+  <figure class="presentation-projet__body__sliders__slide" *ngFor="let image of images; let i = index;"
+          [ngStyle]="{'background-image': 'url('+image+')' }"
+          [ngClass]="{'presentation-projet__body__sliders__slide-left': indexLeft.indexOf(i) > -1,
+      'presentation-projet__body__sliders__slide-right': indexRight.indexOf(i) > -1,
+      'presentation-projet__body__sliders__slide-active': i === indexActive }">
+  </figure>
+</div>

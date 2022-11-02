@@ -1,0 +1,48 @@
+<article class="presentation-projet">
+  <a routerLink="/projets" class="presentation-projet__retour">Retour aux projets</a>
+
+  <header class="presentation-projet__header">
+    <h1 class="presentation-projet__header__titre">{{projet.titre}}</h1>
+
+    <div class="presentation-projet__header__infos">
+      <div class="presentation-projet__header__infos__dates">
+        <p>
+          📅 {{projet.debut | date: 'YYYY'}}
+          <span *ngIf="projet.fin && projet.fin.getFullYear() > projet.debut.getFullYear()">
+            - {{projet.fin | date: 'YYYY'}}
+          </span>
+        </p>
+      </div>
+      <div class="presentation-projet__header__infos__entreprise">
+        <p>
+          🏢 {{ projet.entreprise }}
+        </p>
+      </div>
+    </div>
+
+    <div class="presentation-projet__header__technos">
+      <div class="presentation-projet__header__infos__techos__techno" *ngFor="let techno of projet.technologies">
+        <div class="presentation-projet__header__infos__techos__techno__logo"
+             [ngStyle]="{'background-image': 'url('+ techno.image +')'}">
+        </div>
+        <div class="presentation-projet__header__infos__techos__techno__nom">
+          <p>{{techno.nom}}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="presentation-projet__body">
+    <section class="presentation-projet__body__contexte" >
+      <p [innerHTML]="projet.contexte"></p>
+    </section>
+
+    <app-slider-images-projets *ngIf="projet.images.length > 0" [images]="projet.images"></app-slider-images-projets>
+
+
+    <section class="presentation-projet__body__description">
+      <p [innerHTML]="projet.description"></p>
+    </section>
+
+  </div>
+</article>
