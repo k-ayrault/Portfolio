@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {interval, Subscription} from "rxjs";
+import {Element} from "@angular/compiler";
 
 @Component({
   selector: 'app-slider-images-projets',
@@ -31,10 +32,10 @@ export class SliderImagesProjetsComponent implements OnInit {
     this.getIndexLeftAndRight();
 
     const source = interval(10000);
-    this.subscriptionChangeImage = source.subscribe(val => this.changeImage());
+    // this.subscriptionChangeImage = source.subscribe(val => this.changeImage());
   }
 
-  private changeImage(next:boolean = false) {
+  changeImage(next: boolean = false) {
     if (next) {
       if (this.indexActive < this.images.length - 1) {
         this.indexActive++;
@@ -48,7 +49,21 @@ export class SliderImagesProjetsComponent implements OnInit {
         this.indexActive = this.images.length - 1;
       }
     }
+
     this.getIndexLeftAndRight();
+  }
+
+  dotCliqueChangeImage(evt:Event) {
+    let target:HTMLElement|null = (evt.target || evt.currentTarget) as HTMLElement;
+    if (target) {
+      let idImage:number = +(target.dataset['idimage'] || "-1");
+
+      console.log('aled', idImage);
+      if (idImage >= 0) {
+        this.indexActive = idImage;
+        this.getIndexLeftAndRight();
+      }
+    }
   }
 
   private getIndexLeftAndRight() {
