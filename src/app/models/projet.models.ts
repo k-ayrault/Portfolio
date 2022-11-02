@@ -7,8 +7,10 @@ export class Projet {
   titre!: string;
   debut!: Date;
   fin!: Date;
+  entreprise!:string;
   couverture!:string;
   presentation!: string;
+  contexte!:string;
   description!: string;
   images!: string[];
   technologies!: CompetencesTechno[];

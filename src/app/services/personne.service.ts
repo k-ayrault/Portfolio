@@ -145,9 +145,47 @@ export class PersonneService {
         id: 1,
         debut: new Date(2021,8,1),
         fin: new Date(2022,6,31),
+        entreprise: "Personnel",
+        couverture: "../assets/Images/photo.jpg",
+        titre: "Vitrine numérique personnelle",
+        presentation: "Développement de ma vitrine numérique en Angular afin de mettre en pratique les connaissances fraichement acquises sur ce framework.",
+        contexte: "Ayant du temps libre durant ma recherche d'emploi, à la suite de ma licence professionnelle, je " +
+          "décide de commencer à me former sur Angular avec des cours sur OpenClassRooms. <br> Une fois les bases du " +
+          "framework comprises, je décide de créer ma vitrine numérique afin de mettre en pratique ce que je venais " +
+          "d'apprendre. ",
+        description: "Pour créer cette vitrine numérique, je décide de commencer à créer une maquette sur canvas afin " +
+          "d'avoir une base visuel de ce que je voulais en résultat. " +
+          "<br>" +
+          "Une fois cette maquette créer, je commence le développement de ma vitrine numérique, en mettant en pratique " +
+          "mes connaissances fraichement acquise d'Angular ainsi que celles sur HTML et CSS.",
+        images: ["../assets/Images/front/angular.png", "../assets/Images/front/html.png", "../assets/Images/front/css.png", "../assets/Images/front/css.png"],
+        technologies: [
+          {
+            nom: "Angular", image: "../assets/Images/front/angular.png"
+          },
+          {
+            nom: "HTML5", image: "../assets/Images/front/html.png"
+          },
+          {
+            nom: "CSS3", image: "../assets/Images/front/css.png"
+          }
+        ],
+        collaborateurs: [
+          {
+            nom: "SOUILAH", prenom: "Marc", site: ""
+          }
+        ],
+        reseaux: []
+      },
+      {
+        id: 2,
+        debut: new Date(2021,8,1),
+        fin: new Date(2022,6,31),
+        entreprise: "Université de Limoges",
         couverture: "../assets/Images/back/php.png",
         titre: "Développement d'une application de gestion de demande d'accès",
         presentation: "L'Université de Limoges possédant des zones à régimes restrictifs nécessitant une demande d'accès avant de permettre à une personne d'y pénétrer, ...",
+        contexte: "",
         description: "",
         images: [],
         technologies: [
@@ -179,6 +217,17 @@ export class PersonneService {
 
   getProjets(): Projet[] {
     return this.personne.projets;
+  }
+
+  getProjet(projetId:number):Projet {
+    const projet = this.personne.projets.find(p => p.id === projetId);
+
+    if (!projet) {
+      throw new Error('Projet inexistant');
+    }
+
+    return projet;
+
   }
 
   private getAge(aniv: Date) {

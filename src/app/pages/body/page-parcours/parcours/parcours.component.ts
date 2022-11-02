@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Experience} from "../models/experience.models";
-import {PersonneService} from "../services/personne.service";
+import {Experience} from "../../../../models/experience.models";
+import {PersonneService} from "../../../../services/personne.service";
 
 @Component({
   selector: 'app-parcours',

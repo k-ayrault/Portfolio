@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Element} from "@angular/compiler";
-import {Experience} from "../models/experience.models";
+import {Experience} from "../../../../models/experience.models";
 
 @Component({
   selector: 'app-timeline',

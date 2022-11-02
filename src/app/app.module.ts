@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { AccueilComponent } from './accueil/accueil.component';
-import { PresentationComponent } from './presentation/presentation.component';
-import { ProjetsComponent } from './projets/projets.component';
-import { ContactComponent } from './contact/contact.component';
-import { CompetencesComponent } from './competences/competences.component';
-import { ParcoursComponent } from './parcours/parcours.component';
-import { TimelineComponent } from './timeline/timeline.component';
+import { HeaderComponent } from './pages/header/header.component';
+import { AccueilComponent } from './pages/body/accueil/accueil.component';
+import { PresentationComponent } from './pages/body/presentation/presentation.component';
+import { ProjetsComponent } from './pages/body/page-projets/projets/projets.component';
+import { ContactComponent } from './pages/body/contact/contact.component';
+import { CompetencesComponent } from './pages/body/competences/competences.component';
+import { ParcoursComponent } from './pages/body/page-parcours/parcours/parcours.component';
+import { TimelineComponent } from './pages/body/page-parcours/timeline/timeline.component';
 
 import * as fr from '@angular/common/locales/fr';
 import {registerLocaleData} from "@angular/common";
-import { ProjetComponent } from './projet/projet.component';
+import { ProjetComponent } from './pages/body/page-projets/projet/projet.component';
+import { PresentationProjetComponent } from './pages/body/page-projets/presentation-projet/presentation-projet.component';
+import { SliderImagesProjetsComponent } from './pages/body/page-projets/slider-images-projets/slider-images-projets.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ProjetComponent } from './projet/projet.component';
     CompetencesComponent,
     ParcoursComponent,
     TimelineComponent,
-    ProjetComponent
+    ProjetComponent,
+    PresentationProjetComponent,
+    SliderImagesProjetsComponent
   ],
   imports: [
     BrowserModule,

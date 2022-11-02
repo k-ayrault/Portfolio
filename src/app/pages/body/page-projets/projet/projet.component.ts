@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Projet} from "../models/projet.models";
+import {Projet} from "../../../../models/projet.models";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-projet',
@@ -9,10 +10,13 @@ import {Projet} from "../models/projet.models";
 export class ProjetComponent implements OnInit {
 
   @Input() projet!: Projet;
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
     console.log(this.projet)
   }
 
+  presentationProjet() {
+    this.router.navigateByUrl(`/projets/${this.projet.id}`)
+  }
 }

@@ -9,7 +9,7 @@
 }
 
 .card-projet-info {
-  height: 50%;
+  height: 40%;
   width: 100%;
   align-self: flex-end;
   background-color: rgba(200, 209, 222, 0.75);
@@ -17,8 +17,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  transition: 500ms ease-out;
+  transition: 200ms ease-out;
   border-radius: 10px 10px 0 0;
+}
+
+.card-projet-info-titre {
+  padding: 10px 0;
 }
 
 .card-projet-info>* {
@@ -46,21 +50,21 @@
 
 .card-projet-info-presentation {
   display: none;
+  text-align: justify;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
 .card-projet-info-technos {
-  width: 100%;
+  padding: 10px 0;
+  max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card-projet-info-technos>.card-projet-info-technos-techno {
-  margin-right: 0.5em;
-  padding: 0.25em 1em;
-  font-size: 0.95em;
-  color: white;
-  font-weight: bold;
-  background-color: black;
-  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  background-position: center;
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {PersonneService} from "../services/personne.service";
-import {Competences} from "../models/competences.models";
+import {PersonneService} from "../../../services/personne.service";
+import {Competences} from "../../../models/competences.models";
 
 @Component({
   selector: 'app-presentation-a-skills',

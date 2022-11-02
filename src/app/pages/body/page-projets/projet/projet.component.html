@@ -1,0 +1,11 @@
+<div class="card-projet" [ngStyle]="{'background-image': 'url(\'' + projet.couverture+ '\')' }" (click)="presentationProjet()">
+  <div class="card-projet-info">
+    <h4 class="card-projet-info-titre">{{projet.titre}}</h4>
+
+    <p class="card-projet-info-presentation">{{projet.presentation}}</p>
+
+    <div class="card-projet-info-technos">
+      <div class="card-projet-info-technos-techno" *ngFor="let techno of projet.technologies" [ngStyle]="{'background-image': 'url('+techno.image+')'}" [title]="techno.nom"></div>
+    </div>
+  </div>
+</div>
