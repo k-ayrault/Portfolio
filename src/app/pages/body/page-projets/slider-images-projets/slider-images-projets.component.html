@@ -1,7 +1,7 @@
 <div class="presentation-projet__body__sliders">
   <div class="presentation__body__sliders__fleches presentation__body__sliders__fleches__left"
        (click)="changeImage()"></div>
-  <div class="presentation-projet__body__sliders__images">
+  <div class="presentation-projet__body__sliders__images" (touchstart)="sauvegardePremiereTouche($event)" (touchmove)="swipeImage($event)">
     <figure class="presentation-projet__body__sliders__images__image" *ngFor="let image of images; let i = index;"
             [ngStyle]="{'background-image': 'url('+image+')' }"
             [ngClass]="{'presentation-projet__body__sliders__slide-left': indexLeft.indexOf(i) > -1,

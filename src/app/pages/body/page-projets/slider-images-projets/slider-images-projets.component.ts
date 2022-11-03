@@ -96,4 +96,39 @@ export class SliderImagesProjetsComponent implements OnInit {
     }
   }
 
+  private xTouch:number = 0;
+  private yTouch:number = 0;
+
+  sauvegardePremiereTouche(event:TouchEvent) {
+    const firstTouch = event.touches[0];
+    this.xTouch = firstTouch.clientX;
+    this.yTouch = firstTouch.clientY;
+  }
+
+  swipeImage(event:TouchEvent) {
+    if ( ! this.xTouch || ! this.yTouch ) {
+      return;
+    }
+
+    let xUp = event.changedTouches[event.changedTouches.length-1].clientX;
+    let yUp = event.changedTouches[event.changedTouches.length-1].clientY;
+
+    let xDiff = this.xTouch - xUp;
+    let yDiff = this.yTouch - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+      if ( xDiff > 0 ) {
+        /* right swipe */
+        this.changeImage(true);
+      } else {
+        /* left swipe */
+        this.changeImage(false);
+      }
+    }
+
+    /* reset values */
+    this.xTouch = 0;
+    this.yTouch = 0;
+  };
+
 }
