@@ -171,11 +171,19 @@ export class PersonneService {
           }
         ],
         collaborateurs: [
-          {
-            nom: "SOUILAH", prenom: "Marc", site: ""
-          }
         ],
-        reseaux: []
+        reseaux: [
+          {
+            nom: "kayrault.fr",
+            img: "../assets/Images/reseaux/internet.svg",
+            lien: "http://www.kayrault.fr"
+          },
+          {
+            nom: "Github",
+            img:"../assets/Images/reseaux/github.png",
+            lien: "https://github.com/k-ayrault/Portfolio"
+          }
+        ]
       },
       {
         id: 2,
@@ -195,7 +203,7 @@ export class PersonneService {
         ],
         collaborateurs: [
           {
-            nom: "SOUILAH", prenom: "Marc", site: ""
+            nom: "SOUILAH", prenom: "Marc", site: "", genre: "H"
           }
         ],
         reseaux: []

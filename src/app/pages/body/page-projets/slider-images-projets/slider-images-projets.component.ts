@@ -32,7 +32,7 @@ export class SliderImagesProjetsComponent implements OnInit {
     this.getIndexLeftAndRight();
 
     const source = interval(10000);
-    // this.subscriptionChangeImage = source.subscribe(val => this.changeImage());
+    this.subscriptionChangeImage = source.subscribe(val => this.changeImage(true));
   }
 
   changeImage(next: boolean = false) {

@@ -45,4 +45,25 @@
     </section>
 
   </div>
+
+  <footer class="presentation-projet__footer">
+    <div class="presentation-projet__footer__collaborateurs" *ngIf="projet.collaborateurs.length > 0">
+      <h2>Collaborateurs</h2>
+      <div class="presentation-projet__footer__collaborateurs__liste">
+        <a class="presentation-projet__footer__collaborateurs__liste__item" *ngFor="let collaborateur of projet.collaborateurs" [href]="collaborateur.site" target="_blank" [ngStyle]="{'pointer-events': collaborateur.site ? 'auto' : 'none' }">
+          <div class="presentation-projet__footer__collaborateurs__liste__item__img"
+               [ngClass]="{'presentation-projet__footer__collaborateurs__liste__item__img-H': collaborateur.genre === 'H','presentation-projet__footer__collaborateurs__liste__item__img-F': collaborateur.genre === 'F' } "></div>
+          {{ collaborateur.nom | uppercase }} {{ collaborateur.prenom | titlecase }}
+        </a>
+      </div>
+    </div>
+    <div class="presentation-projet__footer__reseaux" *ngIf="projet.reseaux.length > 0">
+      <div class="presentation-projet__footer__reseaux__liste">
+        <a class="presentation-projet__footer__reseaux__liste__item" *ngFor="let reseau of projet.reseaux" [href]="reseau.lien" target="_blank">
+            <div class="presentation-projet__footer__reseaux__liste__item__logo" [ngStyle]="{ 'background-image': 'url('+reseau.img+')' }"></div>
+            {{ reseau.nom }}
+        </a>
+      </div>
+    </div>
+  </footer>
 </article>

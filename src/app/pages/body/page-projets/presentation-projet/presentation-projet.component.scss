@@ -33,7 +33,9 @@
   margin-right: 1em;
 }
 
-.presentation-projet__header__infos__techos__techno {
+.presentation-projet__header__infos__techos__techno,
+.presentation-projet__footer__reseaux__liste__item,
+.presentation-projet__footer__collaborateurs__liste__item {
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -43,7 +45,9 @@
   font-weight: bold;
 }
 
-.presentation-projet__header__infos__techos__techno__logo {
+.presentation-projet__header__infos__techos__techno__logo,
+.presentation-projet__footer__reseaux__liste__item__logo,
+.presentation-projet__footer__collaborateurs__liste__item__img {
   width: 25px;
   height: 25px;
   background-size: 100%;
@@ -57,3 +61,54 @@
 
 
 .presentation-projet__body {}
+
+.presentation-projet__body__contexte,
+.presentation-projet__body__description {
+  text-align: justify;
+}
+
+.presentation-projet__footer {
+  width: 100%;
+}
+
+.presentation-projet__footer__reseaux,
+.presentation-projet__footer__reseaux__liste,
+.presentation-projet__footer__collaborateurs,
+.presentation-projet__footer__collaborateurs__liste {
+  width: 100%;
+}
+
+.presentation-projet__footer__reseaux {
+  margin-top: 2em;
+}
+
+.presentation-projet__footer__reseaux__liste,
+.presentation-projet__footer__collaborateurs__liste {
+  display: flex;
+}
+
+.presentation-projet__footer__reseaux__liste {
+  justify-content: center;
+}
+
+.presentation-projet__footer__reseaux__liste__item,
+.presentation-projet__footer__collaborateurs__liste__item {
+  text-decoration: none;
+  color: black;
+}
+
+.presentation-projet__footer__collaborateurs__liste__item {
+  font-weight: bold;
+}
+
+.presentation-projet__footer__collaborateurs__liste__item {
+  background-color: transparent;
+}
+
+.presentation-projet__footer__collaborateurs__liste__item__img-H {
+  background-image: url('../../../../../assets/Images/genre/male.svg');
+}
+
+.presentation-projet__footer__collaborateurs__liste__item__img-F {
+  background-image: url('../../../../../assets/Images/genre/female.svg');
+}
