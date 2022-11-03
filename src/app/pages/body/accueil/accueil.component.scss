@@ -1,6 +1,6 @@
 .content-accueil {
   width: 100%;
-  height: 100%;
+  height: var(--body-height-min-lg);
   display: flex;
   flex-wrap: wrap;
 }

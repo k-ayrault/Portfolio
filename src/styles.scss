@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --body-height-min-lg : calc(100vh - 7vh - 2*3vh);
+}
+
 html, #mainBody {
   background-color: rgb(200,209,222, 0.25);
   padding:0;

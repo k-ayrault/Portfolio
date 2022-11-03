@@ -11,7 +11,8 @@
 .body {
   padding: 0 25vw;
   max-width: 50vw;
-  min-height: calc(100vh - 7vh - 2*3vh);
+  min-height:  var(--body-height-min-lg);
+  max-height: fit-content;
 }
 
 @media (max-width: 1400px) {

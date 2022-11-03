@@ -1,7 +1,7 @@
 .presentation {
   padding-top: 1em;
   width: 100%;
-  height: calc(100% - 1em);
+  height: calc(var(--body-height-min-lg) - 1em);
   display: flex;
   flex-wrap: wrap;
 }
