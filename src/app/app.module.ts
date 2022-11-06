@@ -17,6 +17,8 @@ import {registerLocaleData} from "@angular/common";
 import { ProjetComponent } from './pages/body/page-projets/projet/projet.component';
 import { PresentationProjetComponent } from './pages/body/page-projets/presentation-projet/presentation-projet.component';
 import { SliderImagesProjetsComponent } from './pages/body/page-projets/slider-images-projets/slider-images-projets.component';
+import {FormsModule} from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,10 +35,12 @@ import { SliderImagesProjetsComponent } from './pages/body/page-projets/slider-i
     PresentationProjetComponent,
     SliderImagesProjetsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule
+    ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-FR'}
   ],

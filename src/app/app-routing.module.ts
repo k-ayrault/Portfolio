@@ -18,7 +18,7 @@ const routes: Routes = [
     path: 'projets/:id', component: PresentationProjetComponent
   },
   {path: 'contact', component: ContactComponent},
-  {path: '**', redirectTo: ''}
+  // {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
