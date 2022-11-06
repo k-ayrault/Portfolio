@@ -1,0 +1,156 @@
+.contentContact {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contentContact__infos,
+.contentContact__form {
+  width: calc(50% - 2em);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.contentContact__form {
+  margin-top: 1em;
+}
+
+.contentContact__form__nomPrenom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentContact__form__nomPrenom__nom,
+.contentContact__form__nomPrenom__prenom {
+  width: calc(50% - 1em);
+}
+
+.contentContact__form__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentContact__form__input>label {
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.contentContact__form__input>input,
+.contentContact__form__input>textarea {
+  border: 1px solid  rgb(200,209,222);
+  border-radius: 10px;
+  min-height: 2em;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.contentContact__form__submit {
+  font-weight: bold;
+  align-self: center;
+  width: 200px;
+  height: 3em;
+  background-color: rgb(200,209,222);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contentContact__form__input__required::before {
+  content: " *";
+  color: red;
+}
+
+.contentContact__form__legendes {
+  width: 100%;
+}
+
+.contentContact__form__legendes__legende {
+  margin: 5px;
+  font-size: 0.9em;
+}
+
+.contentContact__form__submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.contentContact__infos__infosContact {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contentContact__infos__infosContact__donnees {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  height: 1.5em;
+  margin: 0 10px 0 0;
+}
+
+.contentContact__infos__infosContact__logo {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+
+.contentContact__infos__reseaux {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contentContact__infos__reseaux__reseau {
+  width: 35px;
+  height: 35px;
+}
+
+.contentContact__infos__reseaux__reseau__lien {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .contentContact__infos,
+  .contentContact__form {
+    width: 100%;
+  }
+
+  .contentContact__form {
+    border-top: 1px solid rgb(200,209,222);
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+}

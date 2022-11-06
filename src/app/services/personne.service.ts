@@ -134,10 +134,20 @@ export class PersonneService {
     ],
     contacts: [
       {
-        type: "Téléphone", valeur: "07-60-58-64-02"
+        type: "Téléphone", valeur: "+33 7 60 58 64 02", logo: "../assets/Images/icones/phone.svg"
       },
       {
-        type: "E-mail", valeur: "kevin.ayrault87@gmail.com"
+        type: "E-mail", valeur: "kevin.ayrault87@gmail.com", logo: "../assets/Images/icones/mail.svg"
+      }
+    ],
+    reseaux: [
+      {
+        nom: "LinkedIn", img: "../assets/Images/reseaux/linkedin.svg", lien:"https://www.linkedin.com/in/kevin-ayrault/"
+      },
+      {
+        nom: "Github",
+        img:"../assets/Images/reseaux/github.svg",
+        lien: "https://github.com/k-ayrault/"
       }
     ],
     projets: [
@@ -180,7 +190,7 @@ export class PersonneService {
           },
           {
             nom: "Github",
-            img:"../assets/Images/reseaux/github.png",
+            img:"../assets/Images/reseaux/github.svg",
             lien: "https://github.com/k-ayrault/Portfolio"
           }
         ]

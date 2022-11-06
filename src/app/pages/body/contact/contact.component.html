@@ -1,1 +1,52 @@
-<p>contact works!</p>
+<div class="contentContact">
+  <div class="contentContact__infos">
+    <h1 class="contentContact__infos__titre">Entrons en contact</h1>
+    <p class="contentContact__infos_texte">Vous souhaitez collaborer avec moi ? <br> Avoir plus d'informations ? <br>
+      Autre chose ? <br>N'héistez pas à me contacter.</p>
+
+    <div class="contentContact__infos__infosContact">
+      <a *ngFor="let contact of personne.contacts" class="contentContact__infos__infosContact__donnees"
+         [attr.href]="contact.type === 'Téléphone' || contact.type === 'E-mail' ?
+            contact.type === 'Téléphone'? 'tel:'+contact.valeur.trim() :
+               contact.type === 'E-mail' ? 'mailto:'+contact.valeur : null
+            : null "><span
+        class="contentContact__infos__infosContact__logo"
+        [ngStyle]="{'background-image': 'url('+contact.logo+')'}"></span> {{contact.valeur}}</a>
+    </div>
+    <div class="contentContact__infos__reseaux">
+      <div class="contentContact__infos__reseaux__reseau" *ngFor="let reseau of personne.reseaux">
+        <a [href]="reseau.lien"
+           [ngStyle]="{'pointer-events': reseau.lien ? 'auto' : 'none', 'background-image': 'url('+reseau.img+')' }"
+           [title]="reseau.nom" class="contentContact__infos__reseaux__reseau__lien"></a>
+      </div>
+    </div>
+  </div>
+  <form class="contentContact__form">
+    <div class="contentContact__form__nomPrenom">
+      <div class="contentContact__form__nomPrenom__nom contentContact__form__input">
+        <label for="contactNom">Nom <span class="contentContact__form__input__required"></span></label>
+        <input type="text" name="contactNom" id="contactNom" required>
+      </div>
+      <div class="contentContact__form__nomPrenom__prenom contentContact__form__input">
+        <label for="contactPrenom">Prénom <span class="contentContact__form__input__required"></span></label>
+        <input type="text" name="contactPrenom" id="contactPrenom" required>
+      </div>
+    </div>
+    <div class="contentContact__form__societe contentContact__form__input">
+      <label for="contactSociete">Société</label>
+      <input type="text" name="contactSociete" id="contactSociete">
+    </div>
+    <div class="contentContact__form__mail contentContact__form__input">
+      <label for="contactMail">Mail <span class="contentContact__form__input__required"></span></label>
+      <input type="email" name="contactMail" id="contactMail" required>
+    </div>
+    <div class="contentContact__form__content contentContact__form__input">
+      <label for="contactMessage">Message <span class="contentContact__form__input__required"></span></label>
+      <textarea name="message" id="contactMessage" rows="7" required></textarea>
+    </div>
+    <div class="contentContact__form__legendes">
+      <p class="contentContact__form__legendes__legende"><span class="contentContact__form__input__required"></span> Champs obligatoires</p>
+    </div>
+    <input type="submit" class="contentContact__form__submit contentContact__form__input" value="Envoyer">
+  </form>
+</div>
