@@ -11,7 +11,7 @@ export class MailService {
 
   sendMail(mail:Mail) {
 
-    return this.http.post<Mail>('/send_mail.php', mail)
+    return this.http.post<Mail>('/mail/send_mail.php', mail)
       .subscribe(
         response => console.log(response),
         response => console.log(response)
