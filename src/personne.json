@@ -1,0 +1,250 @@
+{
+  "nom": "Ayrault",
+  "prenom": "Kévin",
+  "img": "../assets/Images/photo.jpg",
+  "dateNaissance": "2001-09-26",
+  "age": 21,
+  "situation": "Actuellement en recherche d'un premier emploi dans le domaine du développement web (Back-End/Full-Stack) à la suite de l'obtention de ma licence professionnelle - Développeur d'applications Web et Big Data.",
+  "ville": {
+    "nom": "Limoges",
+    "pays": "🇫🇷"
+  },
+  "niveauEtude": {
+    "niveau": "Bac +3",
+    "nomDiplome": "Licence Professionnelle - Développeur d'applications Web et Big Data"
+  },
+  "description": "Passioné par le développement web, je me suis professionnalisé durant ma licence professionnelle - développement d'applications web et big data ...",
+  "metier": "Développeur Web",
+  "competences": {
+    "back": [
+      {
+        "nom": "Symfony",
+        "image": "../assets/Images/back/symfony.png"
+      },
+      {
+        "nom": "Node.js",
+        "image": "../assets/Images/back/node.png"
+      },
+      {
+        "nom": "PHP",
+        "image": "../assets/Images/back/php.png"
+      },
+      {
+        "nom": "Spring",
+        "image": "../assets/Images/back/spring.png"
+      }
+    ],
+    "front": [
+      {
+        "nom": "HTML5",
+        "image": "../assets/Images/front/html.png"
+      },
+      {
+        "nom": "CSS3",
+        "image": "../assets/Images/front/css.png"
+      },
+      {
+        "nom": "JavaScript",
+        "image": "../assets/Images/front/js.png"
+      },
+      {
+        "nom": "Angular",
+        "image": "../assets/Images/front/angular.png"
+      },
+      {
+        "nom": "Bootstrap",
+        "image": "../assets/Images/front/bootstrap.png"
+      }
+    ],
+    "donnees": [
+      {
+        "nom": "MySQL",
+        "image": "../assets/Images/donnees/mysql.png"
+      },
+      {
+        "nom": "MariaDB",
+        "image": "../assets/Images/donnees/mariadb.png"
+      }
+    ],
+    "autres": [
+      {
+        "nom": "Java",
+        "image": "../assets/Images/autres/java.png"
+      },
+      {
+        "nom": "Python",
+        "image": "../assets/Images/autres/python.png"
+      },
+      {
+        "nom": "Kotlin",
+        "image": "../assets/Images/autres/kotlin.png"
+      },
+      {
+        "nom": "C++",
+        "image": "../assets/Images/autres/c++.png"
+      }
+    ],
+    "outils": [
+      {
+        "nom": "Git",
+        "image": "../assets/Images/outils/git.png"
+      },
+      {
+        "nom": "PhpMyAdmin",
+        "image": "../assets/Images/outils/phpmyadmin.png"
+      }
+    ],
+    "logiciels": [
+      {
+        "nom": "Suite JetBrains",
+        "image": "../assets/Images/logiciels/jetbrains.png"
+      },
+      {
+        "nom": "Android Studio",
+        "image": "../assets/Images/logiciels/android_studio.png"
+      },
+      {
+        "nom": "Visual Studio",
+        "image": "../assets/Images/logiciels/vsc.png"
+      }
+    ]
+  },
+  "experiences": [
+    {
+      "diplome": true,
+      "nom": "Diplôme Universitaire des Technologies - Informatique",
+      "abrev": "DUT Informatique",
+      "annees": [
+        2019,
+        2021
+      ],
+      "etablissement": "IUT du Limousin",
+      "ville": "Limoges",
+      "pays": "🇫🇷",
+      "descr": ""
+    },
+    {
+      "diplome": true,
+      "nom": "Licence Professionnelle - Développeur d'applications Web et Big Data",
+      "abrev": "LP - DWBD",
+      "annees": [
+        2021,
+        2022
+      ],
+      "etablissement": "IUT du Limousin",
+      "ville": "Limoges",
+      "pays": "🇫🇷",
+      "descr": ""
+    },
+    {
+      "diplome": false,
+      "nom": "Alternant",
+      "abrev": "Alternant",
+      "annees": [
+        2021,
+        2022
+      ],
+      "etablissement": "Université de Limoges",
+      "ville": "Limoges",
+      "pays": "🇫🇷",
+      "descr": "Alternance en complément de ma Licence Professionnelle - Développeur d'applications Web et Big Data où mon projet principal était le développement et l'évolution d'une application web traitant la gestion des demandes d'accès physique des zones à régimes restrictifs des laboratoires de l'Université de Limoges"
+    }
+  ],
+  "contacts": [
+    {
+      "type": "Téléphone",
+      "valeur": "+33 7 60 58 64 02",
+      "logo": "../assets/Images/icones/phone.svg"
+    },
+    {
+      "type": "E-mail",
+      "valeur": "kevin.ayrault87@gmail.com",
+      "logo": "../assets/Images/icones/mail.svg"
+    }
+  ],
+  "reseaux": [
+    {
+      "nom": "LinkedIn",
+      "img": "../assets/Images/reseaux/linkedin.svg",
+      "lien": "https://www.linkedin.com/in/kevin-ayrault/"
+    },
+    {
+      "nom": "Github",
+      "img": "../assets/Images/reseaux/github.svg",
+      "lien": "https://github.com/k-ayrault/"
+    }
+  ],
+  "projets": [
+    {
+      "id": 1,
+      "debut": "2022-10-16",
+      "fin": "2022-11-10",
+      "entreprise": "Personnel",
+      "couverture": "../assets/Images/photo.jpg",
+      "titre": "Vitrine numérique personnelle",
+      "presentation": "Développement de ma vitrine numérique en Angular afin de mettre en pratique les connaissances fraichement acquises sur ce framework.",
+      "contexte": "Ayant du temps libre durant ma recherche d'emploi, à la suite de ma licence professionnelle, je décide de commencer à me former sur Angular avec des cours sur OpenClassRooms. <br> Une fois les bases du framework comprises, je décide de créer ma vitrine numérique afin de mettre en pratique ce que je venais d'apprendre. ",
+      "description": "Pour créer cette vitrine numérique, je décide de commencer à créer une maquette sur canvas afin d'avoir une base visuel de ce que je voulais en résultat. <br>Une fois cette maquette créer, je commence le développement de ma vitrine numérique, en mettant en pratique mes connaissances fraichement acquise d'Angular ainsi que celles sur HTML et CSS.",
+      "images": [
+        "../assets/Images/front/angular.png",
+        "../assets/Images/front/html.png",
+        "../assets/Images/front/css.png",
+        "../assets/Images/front/css.png"
+      ],
+      "technologies": [
+        {
+          "nom": "Angular",
+          "image": "../assets/Images/front/angular.png"
+        },
+        {
+          "nom": "HTML5",
+          "image": "../assets/Images/front/html.png"
+        },
+        {
+          "nom": "CSS3",
+          "image": "../assets/Images/front/css.png"
+        }
+      ],
+      "collaborateurs": [],
+      "reseaux": [
+        {
+          "nom": "kayrault.fr",
+          "img": "../assets/Images/reseaux/internet.svg",
+          "lien": "http://www.kayrault.fr"
+        },
+        {
+          "nom": "Github",
+          "img": "../assets/Images/reseaux/github.svg",
+          "lien": "https://github.com/k-ayrault/Portfolio"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "debut": "2021-09-01",
+      "fin": "2022-07-31",
+      "entreprise": "Université de Limoges",
+      "couverture": "../assets/Images/back/php.png",
+      "titre": "Développement d'une application de gestion de demande d'accès",
+      "presentation": "L'Université de Limoges possédant des zones à régimes restrictifs nécessitant une demande d'accès avant de permettre à une personne d'y pénétrer, ...",
+      "contexte": "",
+      "description": "",
+      "images": [],
+      "technologies": [
+        {
+          "nom": "PHP",
+          "image": "../assets/Images/back/php.png"
+        }
+      ],
+      "collaborateurs": [
+        {
+          "nom": "SOUILAH",
+          "prenom": "Marc",
+          "site": "",
+          "genre": "H"
+        }
+      ],
+      "reseaux": []
+    }
+  ]
+}
