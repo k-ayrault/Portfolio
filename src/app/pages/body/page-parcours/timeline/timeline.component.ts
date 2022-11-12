@@ -10,6 +10,7 @@ import {Experience} from "../../../../models/experience.models";
 export class TimelineComponent implements OnInit {
   @Input() position!:number;
   @Input() experience!:Experience;
+  show:boolean = false;
   private showDescr:Boolean = false;
   private classDescr: string = "timeline-content-descr";
   private classShowHide:string = "timeline-content-show-hide";
@@ -21,21 +22,6 @@ export class TimelineComponent implements OnInit {
   }
 
   showHideDescr(event:Event) {
-    if (event.currentTarget instanceof HTMLElement) {
-      const target:HTMLElement = event.currentTarget;
-      const descr:HTMLElement = target.querySelector("."+this.classDescr)!;
-      const showHideLogo:HTMLElement = target.querySelector("."+this.classShowHide)!;
-
-      if (this.showDescr) {
-        descr.style.display = 'none';
-        showHideLogo.classList.remove(this.classHide);
-        this.showDescr = false;
-      }
-      else {
-        descr.style.display = 'block';
-        showHideLogo.classList.add(this.classHide);
-        this.showDescr = true;
-      }
-    }
+    this.show = !this.show;
   }
 }

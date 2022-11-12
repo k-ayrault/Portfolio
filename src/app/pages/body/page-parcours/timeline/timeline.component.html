@@ -17,12 +17,12 @@
         <p>📍 {{ experience.ville }} {{ experience.pays }}</p>
       </div>
     </div>
-    <div class="timeline-content-descr">
+    <div class="timeline-content-descr" [style.display]="show ? 'block' : 'none'">
       <p>
         {{ experience.descr }}
       </p>
     </div>
   </div>
-  <div class="timeline-content-show-hide timeline-content-show" [ngClass]="{ 'show-hide': experience.descr }">
+  <div class="timeline-content-show-hide" [ngClass]="{ 'show-hide': experience.descr, 'timeline-content-show-hide__show': !show, 'timeline-content-show-hide__hide': show }">
   </div>
 </div>
