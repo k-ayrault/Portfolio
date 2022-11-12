@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  <form class="contentContact__form" (ngSubmit)="sendMail(contactForm)" #contactForm="ngForm">
+  <form class="contentContact__form" (ngSubmit)="sendMail(contactForm)" #contactForm="ngForm" *ngIf="!mailSend; else mailSendDiv">
     <div class="contentContact__form__nomPrenom">
       <div class="contentContact__form__nomPrenom__nom contentContact__form__input">
         <label for="contactNom">Nom <span class="contentContact__form__input__required"></span></label>
@@ -49,4 +49,9 @@
     </div>
     <input type="submit" class="contentContact__form__submit contentContact__form__input" value="Envoyer">
   </form>
+  <ng-template #mailSendDiv>
+    <div class="contentContact__mailSend">
+      <div class="contentContact__mailSend__svg"></div>
+      <h4 class="contentContact__mailSend__text">Merci de votre message ! <br> Je vous répond dans les plus brefs délais !</h4></div>
+  </ng-template>
 </div>

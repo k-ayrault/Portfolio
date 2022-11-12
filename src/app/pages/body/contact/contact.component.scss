@@ -5,7 +5,8 @@
 }
 
 .contentContact__infos,
-.contentContact__form {
+.contentContact__form,
+.contentContact__mailSend {
   width: calc(50% - 2em);
   padding: 1em;
   display: flex;
@@ -126,6 +127,20 @@
   background-repeat: no-repeat;
 }
 
+.contentContact__mailSend__svg {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  background-image: url("../../../../assets/Images/icones/success.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+}
+
+.contentContact__mailSend__text {
+  text-align: center;
+}
 
 @media (max-width: 1400px) {
 
@@ -136,9 +151,16 @@
 }
 
 @media (max-width: 992px) {
+
+  .contentContact__form,
+  .contentContact__mailSend {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+  }
+
   .contentContact__infos,
-  .contentContact__form {
-    width: 100%;
+  .contentContact__form,
+  .contentContact__mailSend {
+    width: calc(100% - 2em);
   }
 
   .contentContact__form {

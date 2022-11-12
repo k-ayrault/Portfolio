@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {PersonneService} from "../../../services/personne.service";
 import {Personne} from "../../../models/personne.models";
 import {NgForm} from "@angular/forms";
@@ -12,18 +12,24 @@ import {Mail} from "../../../models/mail.models";
 })
 export class ContactComponent implements OnInit {
 
-  personne!:Personne;
+  personne!: Personne;
+  mailSend: Boolean = false;
 
-  constructor(private personneService:PersonneService, private mailService:MailService) { }
+  constructor(private personneService: PersonneService, private mailService: MailService) {
+  }
 
   ngOnInit(): void {
     this.personne = this.personneService.getPersonne();
   }
 
-  sendMail(contactForm:NgForm) {
+  sendMail(contactForm: NgForm) {
     if (contactForm.valid) {
-      let mail:Mail = contactForm.value;
-      this.mailService.sendMail(mail);
+      let mail: Mail = contactForm.value;
+      this.mailSend = this.mailService.sendMail(mail);
+      contactForm.resetForm();
     }
   }
+
+
+
 }

@@ -9,13 +9,16 @@ export class MailService {
   constructor(private http:HttpClient) {
   }
 
-  sendMail(mail:Mail) {
-
-    return this.http.post<Mail>('/mail/send_mail.php', mail)
-      .subscribe(
-        response => console.log(response),
-        response => console.log(response)
-      )
-
+  sendMail(mail:Mail): boolean {
+    let mailSend = false;
+    this.http.post<Mail>('/mail/send_mail.php', mail).subscribe({
+      next() {
+        mailSend = true;
+      },
+      error() {
+        mailSend = false;
+      }
+    })
+    return mailSend;
   }
 }
