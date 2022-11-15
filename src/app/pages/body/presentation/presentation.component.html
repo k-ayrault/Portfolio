@@ -1,27 +1,27 @@
 <div class="presentation">
-  <div class="presentation-info">
-    <div class="presentation-info-img" [ngStyle]="{'background-image': 'url('+personne.img+')'}">
+  <div class="presentation__info">
+    <div class="presentation__info__img" [ngStyle]="{'background-image': 'url('+personne.img+')'}">
     </div>
 
-    <div class="presentation-info-content">
-      <h1 class="presentation-info-content-tittle">
+    <div class="presentation__info__content">
+      <h1 class="presentation__info__content__tittle">
         {{ personne.nom | uppercase }} {{ personne.prenom | titlecase }}
       </h1>
       <h3>{{ personne.metier }}</h3>
 
-      <div class="presentation-info-content-donnees">
-        <div class="donnees-content">
-          <h4 class="tittle-donnees">
+      <div class="presentation__info__content__donnees">
+        <div class="presentation__info__content__donnees__info">
+          <h4 class="presentation__info__content__donnees__info__titre">
             Date de naissance :
-            <span class="donnees">
+            <span class="presentation__info__content__donnees__info__valeur">
               {{ personne.dateNaissance | date: 'd MMMM yyyy' }} ({{ personne.age }} ans)
             </span>
           </h4>
         </div>
-        <div class="donnees-content">
-          <h4 class="tittle-donnees">
+        <div class="presentation__info__content__donnees__info">
+          <h4 class="presentation__info__content__donnees__info__titre">
             Niveau d'étude :
-            <span class="donnees">
+            <span class="presentation__info__content__donnees__info__valeur">
               {{ personne.niveauEtude.niveau }}
               <span class="info-niveau-etude" [title]="personne.niveauEtude.nomDiplome"
                     style="background-image: url('../../../../assets/Images/icones/info.svg')"></span>
@@ -29,23 +29,23 @@
           </h4>
         </div>
 
-        <div class="donnees-content" *ngFor="let contact of personne.contacts">
-          <h4 class="tittle-donnees">
+        <div class="presentation__info__content__donnees__info" *ngFor="let contact of personne.contacts">
+          <h4 class="presentation__info__content__donnees__info__titre">
             {{ contact.type }} :
-            <span class="donnees">
+            <span class="presentation__info__content__donnees__info__valeur">
               {{ contact.valeur }}
             </span>
           </h4>
         </div>
 
 
-        <div class="donnees-content">
-          <h4 class="tittle-donnees">
+        <div class="presentation__info__content__donnees__info">
+          <h4 class="presentation__info__content__donnees__info__titre">
             Ville :
-            <span class="donnees">
+            <span class="presentation__info__content__donnees__info__valeur">
               {{ personne.ville.nom }}
 
-              <span class="pays-ville">
+              <span class="presentation__info__content__donnees__info__valeur__pays">
                 {{ personne.ville.pays }}
               </span>
             </span>
@@ -56,7 +56,7 @@
     </div>
   </div>
 
-  <div class="presentation-descr">
+  <div class="presentation__descr">
     <h1>À propos</h1>
     <p>{{ personne.situation }}</p>
     <p>{{ personne.description }}</p>

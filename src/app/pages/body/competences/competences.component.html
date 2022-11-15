@@ -1,50 +1,50 @@
-<div class="competences-content">
-  <div class="competences-type" id="competences-back">
-    <div class="competences-type-titre">
+<div class="competencesContent">
+  <div class="competencesContent__type" id="competences-back">
+    <div class="competencesContent__type__titre">
       <h1>Back</h1>
     </div>
-    <div class="liste-competences">
-      <img *ngFor="let competence of competences.back" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    <div class="competencesContent__type__liste">
+      <div class="competencesContent__type__liste__image" *ngFor="let competence of competences.back" [style.background-image]="'url('+competence.image+')'" [title]="competence.nom"></div>
     </div>
   </div>
-  <div class="competences-type" id="competences-front">
-    <div class="competences-type-titre">
+  <div class="competencesContent__type" id="competences-front">
+    <div class="competencesContent__type__titre">
       <h1>Front</h1>
     </div>
-    <div class="liste-competences">
-      <img *ngFor="let competence of competences.front" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    <div class="competencesContent__type__liste">
+      <div class="competencesContent__type__liste__image" *ngFor="let competence of competences.front" [style.background-image]="'url('+competence.image+')'" [title]="competence.nom"></div>
     </div>
   </div>
-  <div class="competences-type" id="competences-donnees">
-    <div class="competences-type-titre">
+  <div class="competencesContent__type" id="competences-donnees">
+    <div class="competencesContent__type__titre">
       <h1>Données</h1>
     </div>
-    <div class="liste-competences">
-      <img *ngFor="let competence of competences.donnees" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    <div class="competencesContent__type__liste">
+      <div class="competencesContent__type__liste__image" *ngFor="let competence of competences.donnees" [style.background-image]="'url('+competence.image+')'" [title]="competence.nom"></div>
     </div>
   </div>
-  <div class="competences-type" id="competences-autres">
-    <div class="competences-type-titre">
+  <div class="competencesContent__type" id="competences-autres">
+    <div class="competencesContent__type__titre">
       <h1>Autres</h1>
     </div>
-    <div class="liste-competences">
-      <img *ngFor="let competence of competences.autres" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    <div class="competencesContent__type__liste">
+      <div class="competencesContent__type__liste__image" *ngFor="let competence of competences.autres" [style.background-image]="'url('+competence.image+')'" [title]="competence.nom"></div>
     </div>
   </div>
-  <div class="competences-type" id="competences-outils">
-    <div class="competences-type-titre">
+  <div class="competencesContent__type" id="competences-outils">
+    <div class="competencesContent__type__titre">
       <h1>Outils</h1>
     </div>
-    <div class="liste-competences">
-      <img *ngFor="let competence of competences.outils" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    <div class="competencesContent__type__liste">
+      <div class="competencesContent__type__liste__image" *ngFor="let competence of competences.outils" [style.background-image]="'url('+competence.image+')'" [title]="competence.nom"></div>
     </div>
   </div>
-  <div class="competences-type" id="competences-logiciels">
-    <div class="competences-type-titre">
+  <div class="competencesContent__type" id="competences-logiciels">
+    <div class="competencesContent__type__titre">
       <h1>Logiciels</h1>
     </div>
-    <div class="liste-competences">
-      <img *ngFor="let competence of competences.logiciels" [src]="competence.image" [alt]="competence.nom" [title]="competence.nom" class="img-competence">
+    <div class="competencesContent__type__liste">
+      <div class="competencesContent__type__liste__image" *ngFor="let competence of competences.logiciels" [style.background-image]="'url('+competence.image+')'" [title]="competence.nom"></div>
     </div>
   </div>
 </div>

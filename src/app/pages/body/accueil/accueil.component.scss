@@ -1,44 +1,54 @@
-.content-accueil {
+/*  Image accueil  */
+$width-img:50%;
+$height-img:100%;
+$width-img-lg:100%;
+$height-img-lg:25%;
+$height-img-md:30%;
+
+/*  Texte accueil */
+$padding-text-content:4em;
+$width-text:50%;
+$height-text:100%;
+$width-text-lg:100%;
+$height-text-lg: calc(100% - $height-img-lg);
+$height-text-md: calc(100% - $height-img-md);
+
+.contentAccueil {
   width: 100%;
-  height: var(--body-height-min-lg);
+  height: var(--body-height-min);
   display: flex;
   flex-wrap: wrap;
 }
 
-.img-accueil {
-  width: 50%;
-  height: 100%;
+.contentAccueil__img {
+  width: $width-img;
+  height: $height-img;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img-accueil>img {
+.contentAccueil__img>img {
   max-height: 100%;
 }
 
-.txt-accueil {
-  width: 50%;
-  height: 100%;
+.contentAccueil__texte {
+  width: $width-text;
+  height: $height-text;
 }
 
-.txt-accueil-content {
-  height: calc(100% - 8em);
-  padding: 4em;
+.contentAccueil__texte__content {
+  padding: $padding-text-content;
+  height: calc(100% - 2*$padding-text-content);
   width: auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 
-.txt-accueil-content-tittle,
-.txt-accueil-content-text {
-  text-align: justify;
-}
 
-
-@media (max-width: 1400px) {
+@media (max-width:1400px) {
 
 }
 
@@ -47,29 +57,29 @@
 }
 
 @media (max-width: 992px) {
-  .img-accueil {
-    width: 100%;
-    height: 25%;
+  .contentAccueil__img {
+    width: $width-img-lg;
+    height: $height-img-lg;
   }
 
-  .img-accueil>img {
+  .contentAccueil__img>img {
     width: 100%;
     height: auto;
     max-height: none;
   }
 
-  .txt-accueil {
-    width: 100%;
-    height: 75%;
+  .contentAccueil__texte {
+    width: $width-text-lg;
+    height: $height-text-lg;
   }
 }
 
 @media (max-width: 768px) {
-  .img-accueil {
-    height: 30%;
+  .contentAccueil__img {
+    height: $height-img-md
   }
-  .txt-accueil {
-    height: 70%;
+  .contentAccueil__texte {
+    height: $height-text-md;
   }
 }
 

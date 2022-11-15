@@ -1,35 +1,63 @@
+$slider-width:100%;
+$slider-height: 300px;
+$slider-height-lg: 250px;
+$slider-height-md: 200px;
+$slider-height-sm: 150px;
 
-.presentation-projet__body__sliders {
-  width: 100%;
-  height: 300px;
+$slider-fleches-width: 50px;
+$slider-fleches-height: 100%;
+$slider-fleches-hover-bg-color: rgb(200,209,222,0.25);
+$slider-fleches-before-width: calc(2*100%); //  2 fois la largeur du width de la hauteur de .presentation__body__sliders__fleches
+$slider-fleches-before-height: $slider-fleches-width;
+$slider-fleches-before-bg-size: 35%;
+
+$slider-images-width: calc(100% - 2*$slider-fleches-width);
+$slider-images-height: 100%;
+$slider-images-image-width: 100%;
+$slider-images-image-height: 100%;
+$sliders-images-image-bg-size: auto 100%;
+
+$slider-dots-width:100%;
+$slider-dots-height:18px;
+$slider-dots-margin-tb:3px;
+$slider-dots-margin-lr:0;
+$slider-dots-dot-margin-r: 5px;
+$slider-dots-dot-size: 12px;
+$slider-dots-dot-border-radius: 50%;
+$slider-dots-dot-border-px : 3px;
+$slider-dots-dot-border-color: rgb(0,0,0);
+$slider-dots-dot-active-bg-color: rgb(0,0,0);
+
+
+.presentationProjet__body__sliders {
+  width: $slider-width;
+  height: $slider-height;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   position: relative;
 }
+
+.presentation__body__sliders__fleches {
+  width: $slider-fleches-width;
+  height: $slider-fleches-height;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
 .presentation__body__sliders__fleches::before {
   content: "";
   position: absolute;
-  width: 200%;
-  height: 50px;
+  width: $slider-fleches-before-width;
+  height: $slider-fleches-before-width;
   margin: auto 0;
   top: 0;
   bottom: 0;
   left: -50%;
   z-index: -1;
-  background: url('../../../../../assets/Images/icones/fleche.svg') no-repeat center;
-  background-size: 35%;
-}
-
-.presentation__body__sliders__fleches {
-  width: 50px;
-  height: 100%;
-  position: relative;
-  z-index: 10;
-  cursor: pointer;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: var(--svg-fleche) no-repeat center;
+  background-size: $slider-fleches-before-bg-size;
 }
 
 .presentation__body__sliders__fleches__left {
@@ -48,54 +76,74 @@
 }
 
 .presentation__body__sliders__fleches:hover {
-  background-color: rgb(200, 209, 222, 0.25);
+  background-color: $slider-fleches-hover-bg-color;
 }
 
-.presentation-projet__body__sliders__images {
-  width: calc(100% - 2*50px);
-  height: 100%;
+.presentationProjet__body__sliders__images {
+  width: $slider-images-width;
+  height: $slider-images-height;
   position: relative;
   overflow: hidden;
 }
 
-.presentation-projet__body__sliders__images__image {
+.presentationProjet__body__sliders__images__image {
+  margin: 0;
   float: left;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
+  width: $slider-images-image-width;
+  height: $slider-images-image-height;
+  background-size: $sliders-images-image-bg-size;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.presentation-projet__body__sliders__slide-left {
+.presentationProjet__body__sliders__slide-left {
   left: -100%;
 }
 
-.presentation-projet__body__sliders__slide-right {
+.presentationProjet__body__sliders__slide-right {
   right: -100%;
 }
 
-.presentation-projet__body__sliders__dots {
+.presentationProjet__body__sliders__dots {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 18px;
-  margin: 3px 0;
+  width: $slider-dots-width;
+  height: $slider-dots-height;
+  margin: $slider-dots-margin-tb $slider-dots-margin-lr;
   display: flex;
   justify-content: center;
 }
 
-.presentation-projet__body__sliders__dots__dot {
-  margin-right: 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 3px solid black;
+.presentationProjet__body__sliders__dots__dot {
+  margin-right: $slider-dots-dot-margin-r;
+  width: $slider-dots-dot-size;
+  height: $slider-dots-dot-size;
+  border-radius: $slider-dots-dot-border-radius;
+  border: $slider-dots-dot-border-px solid $slider-dots-dot-border-color;
   z-index: 15;
   cursor: pointer;
 }
 
-.presentation-projet__body__sliders__dots__dot-active {
-  background-color: black;
+.presentationProjet__body__sliders__dots__dot-active {
+  background-color: $slider-dots-dot-active-bg-color;
+}
+
+
+@media (max-width: 992px) {
+  .presentationProjet__body__sliders {
+    height: $slider-height-lg;
+  }
+}
+
+@media (max-width: 768px) {
+  .presentationProjet__body__sliders {
+    height: $slider-height-md;
+  }
+}
+
+@media (max-width: 576px) {
+  .presentationProjet__body__sliders {
+    height: $slider-height-sm;
+  }
 }

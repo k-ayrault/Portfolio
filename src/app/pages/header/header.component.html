@@ -1,49 +1,49 @@
-<div class="header-tittle">
-  <div class="header-tittle-img">
+<div class="header__titre">
+  <div class="header__titre__img">
     <img [src]="personne.img" [alt]="personne.nom">
   </div>
-  <div class="header-tittle-nom">
+  <div class="header__titre__nom">
     <h1>{{ personne.nom | uppercase }} {{ personne.prenom | titlecase }}</h1>
   </div>
 </div>
 
-<div class="header-nav-close-open" (click)="navOpen = !navOpen" [ngClass]="{ 'close': navOpen }">
+<div class="header__navCloseOpen" (click)="navOpen = !navOpen" [ngClass]="{ 'close': navOpen }">
 </div>
 
-<nav class="header-nav" [ngClass]="{ 'nav-open': navOpen }">
-  <ul class="header-nav-list">
-    <li class="header-nav-item">
-      <a class="header-nav-link" routerLink="" routerLinkActive="header-nav-item-active"
+<nav class="header__nav" [ngClass]="{ 'header__nav-open': navOpen }">
+  <ul class="header__nav__list">
+    <li class="header__nav__item">
+      <a class="header__nav__item__link" routerLink="" routerLinkActive="header-nav-item-active"
          [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Accueil
       </a>
     </li>
-    <li class="header-nav-item">
-      <a class="header-nav-link" routerLink="/presentation" routerLinkActive="header-nav-item-active"
+    <li class="header__nav__item">
+      <a class="header__nav__item__link" routerLink="/presentation" routerLinkActive="header-nav-item-active"
          [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Présentation
       </a>
     </li>
-    <li class="header-nav-item">
-      <a class="header-nav-link" routerLink="/parcours" routerLinkActive="header-nav-item-active"
+    <li class="header__nav__item">
+      <a class="header__nav__item__link" routerLink="/parcours" routerLinkActive="header-nav-item-active"
          [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Parcours
       </a>
     </li>
-    <li class="header-nav-item">
-      <a class="header-nav-link" routerLink="/competences" routerLinkActive="header-nav-item-active"
+    <li class="header__nav__item">
+      <a class="header__nav__item__link" routerLink="/competences" routerLinkActive="header-nav-item-active"
          [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Compétences
       </a>
     </li>
-    <li class="header-nav-item">
-      <a class="header-nav-link" routerLink="/projets" routerLinkActive="header-nav-item-active"
+    <li class="header__nav__item">
+      <a class="header__nav__item__link" routerLink="/projets" routerLinkActive="header-nav-item-active"
          [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Mes projets
       </a>
     </li>
-    <li class="header-nav-item">
-      <a class="header-nav-link" routerLink="/contact" routerLinkActive="header-nav-item-active"
+    <li class="header__nav__item">
+      <a class="header__nav__item__link" routerLink="/contact" routerLinkActive="header-nav-item-active"
          [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnChangePage()">
         Contact</a>
     </li>

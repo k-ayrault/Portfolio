@@ -1,12 +1,19 @@
-.parcours-content {
-  width: 100%;
-  padding-top: 1em;
-  height: calc(var(--body-height-min-lg) - 1em);
-  overflow-y: hidden;
-}
+$parcours-margin-t:1rem;
+$container-margin-lr:10px;
+$parcours-gap:20px;
 
-.timeline-container {
+.parcoursContent {
+  width: 100%;
+  padding-top: $parcours-margin-t;
+  height: calc(var(--body-height-min) - 1em);
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  gap: $parcours-gap;
+}
+
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 $container-margin-lr;
 }

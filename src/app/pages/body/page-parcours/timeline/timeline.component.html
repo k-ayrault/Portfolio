@@ -1,28 +1,28 @@
 <div class="timeline" [ngClass]="{ 'timeline-odd': position % 2 == 0, 'timeline-even': position % 2 != 0 }"
      (click)="experience.descr != '' && showHideDescr($event)" [title]="experience.nom">
-  <div class="timeline-icon" [ngClass]="{ 'timeline-diplome': experience.diplome, 'timeline-travail': !experience.diplome }">
+  <div class="timeline__icon" [ngClass]="{ 'timeline-diplome': experience.diplome, 'timeline-travail': !experience.diplome }">
   </div>
-  <div class="timeline-content">
-    <div class="timeline-content-tittre" >
-      <h1>{{ experience.abrev }}</h1>
+  <div class="timeline__content">
+    <div class="timeline__content__tittre" >
+      <h3>{{ experience.abrev }}</h3>
     </div>
-    <div class="timeline-content-info">
-      <div class="timeline-content-info-annee">
+    <div class="timeline__content__info">
+      <div class="timeline__content__info__annee">
         📅 {{ experience.annees[0] }}/{{ experience.annees[1] }}
       </div>
-      <div class="timeline-content-info-etablissement">
+      <div class="timeline__content__info__etablissement">
         <p>🏢 {{ experience.etablissement }}</p>
       </div>
-      <div class="timeline-content-info-ville">
+      <div class="timeline__content__info__ville">
         <p>📍 {{ experience.ville }} {{ experience.pays }}</p>
       </div>
     </div>
-    <div class="timeline-content-descr" [style.display]="show ? 'block' : 'none'">
+    <div class="timeline__content__descr" [style.display]="show ? 'block' : 'none'">
       <p>
         {{ experience.descr }}
       </p>
     </div>
   </div>
-  <div class="timeline-content-show-hide" [ngClass]="{ 'show-hide': experience.descr, 'timeline-content-show-hide__show': !show, 'timeline-content-show-hide__hide': show }">
+  <div class="timeline__content__showHide" [ngClass]="{ 'show-hide': experience.descr, 'timeline__content__showHide__show': !show, 'timeline__content__showHide__hide': show }">
   </div>
 </div>

@@ -1,70 +1,138 @@
-.card-projet {
-  width: 100%;
-  height: 100%;
+/*  Card  */
+$projetCard-width: 100%;
+$projetCard-height: 100%;
+$projetCard-bg-size: 100% auto;
+$projetCard-bg-size-xl: 100%;
+
+/*  Card info */
+$projetCard-info-padding-tp: 0;
+$projetCard-info-padding-lr: 1rem;
+$projetCard-info-width: calc(100% - 2*$projetCard-info-padding-lr);
+$projetCard-info-height: 40%;
+$projetCard-info-gap: 7px;
+$projetCard-info-bg-color: rgb(200, 209, 222, 0.75);
+$projetCard-info-transition-time: 200ms;
+$projetCard-info-border-radius: 10px;
+$projetCard-info-titre-padding-tp: 10px;
+$projetCard-info-titre-padding-lr: 0;
+$projetCard-info-titre-height: calc(75% - 2*$projetCard-info-titre-padding-tp - $projetCard-info-gap);
+$projetCard-info-presentation-height-hover: calc(85% - $projetCard-info-gap);
+$projetCard-info-presentation-transition-time: 1s;
+$projetCard-info-technos-height: calc(100% - $projetCard-info-titre-height - $projetCard-info-gap);
+$projetCard-info-technos-height-hover: calc(100% - $projetCard-info-presentation-height-hover - $projetCard-info-gap);
+$projetCard-info-technos-padding-tp: 10px;
+$projetCard-info-technos-padding-lr: 0;
+$projetCard-info-technos-width-max: 100%;
+$projetCard-info-technos-gap: 5px;
+$projetCard-info-technos-logo-width-height: 30px;
+$projetCard-info-technos-logo-height: 100%;
+$projetCard-info-technos-logo-width: 20px;
+$projetCard-info-technos-logo-bg-size: 100% auto;
+
+/*  Card info hover */
+$projetCard-info-height-hover: 100%;
+$projetCard-info-bg-color-hover: rgb(200, 209, 222, 0.9);
+
+.projetCard {
+  width: $projetCard-width;
+  height: $projetCard-height;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: $projetCard-bg-size;
   background-position: center;
   display: flex;
   cursor: pointer;
 }
 
-.card-projet-info {
-  height: 40%;
-  width: 100%;
+.projetCard__info {
+  height: $projetCard-info-height;
+  width: $projetCard-info-width;
+  max-width: $projetCard-info-width;
   align-self: flex-end;
-  background-color: rgba(200, 209, 222, 0.75);
-  padding: 0 1em;
+  background-color: $projetCard-info-bg-color;
+  padding: $projetCard-info-padding-tp $projetCard-info-padding-lr;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  transition: 200ms ease-out;
-  border-radius: 10px 10px 0 0;
+  gap: $projetCard-info-gap;
+  transition: $projetCard-info-transition-time ease-out;
+  border-radius: $projetCard-info-border-radius $projetCard-info-border-radius 0 0;
 }
 
-.card-projet-info-titre {
-  padding: 10px 0;
+.projetCard__info__titre {
+  height: $projetCard-info-titre-height;
+  padding: $projetCard-info-titre-padding-tp $projetCard-info-titre-padding-lr;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.card-projet-info>* {
+
+.projetCard__info > * {
   margin: 0;
 }
 
-.card-projet:hover>.card-projet-info {
-  height: 100%;
-  background-color: rgba(200, 209, 222, 0.9);
+.projetCard:hover > .projetCard__info {
+  height: $projetCard-info-height-hover;
+  background-color: $projetCard-info-bg-color-hover;
   overflow: hidden;
 }
 
 @-webkit-keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.card-projet:hover>.card-projet-info>.card-projet-info-presentation {
-  display: block;
-}
+.projetCard:hover {
+  .projetCard__info {
 
-.card-projet-info-presentation {
+    .projetCard__info__titre {
+      display: none;
+    }
+
+    .projetCard__info__presentation {
+      padding-top: 10px;
+      display: block;
+      height: $projetCard-info-presentation-height-hover;
+      overflow: hidden;
+    }
+
+    .projetCard__info__technos {
+      height: $projetCard-info-technos-height-hover;
+    }
+  }
+
+}
+.projetCard__info__presentation {
   display: none;
-  text-align: justify;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+  -webkit-animation: fadeIn $projetCard-info-presentation-transition-time;
+  animation: fadeIn $projetCard-info-presentation-transition-time;
 }
 
-.card-projet-info-technos {
-  padding: 10px 0;
-  max-width: 100%;
+.projetCard__info__technos {
+  max-width: $projetCard-info-technos-width-max;
+  height: $projetCard-info-technos-height;
   display: flex;
   flex-wrap: wrap;
+  gap: $projetCard-info-technos-gap;
 }
 
-.card-projet-info-technos>.card-projet-info-technos-techno {
-  width: 30px;
-  height: 30px;
-  background-size: 100%;
+.projetCard__info__technos > .projetCard__info__technos__techno {
+  height: $projetCard-info-technos-logo-height;
+  width: $projetCard-info-technos-logo-width;
+  background-size: $projetCard-info-technos-logo-bg-size;
   background-position: center;
+  background-repeat: no-repeat;
 }

@@ -1,11 +1,11 @@
-<div class="card-projet" [ngStyle]="{'background-image': 'url(\'' + projet.couverture+ '\')' }" (click)="presentationProjet()">
-  <div class="card-projet-info">
-    <h4 class="card-projet-info-titre">{{projet.titre}}</h4>
+<div class="projetCard" [ngStyle]="{'background-image': 'url(\'' + projet.couverture+ '\')' }" (click)="presentationProjet()">
+  <div class="projetCard__info">
+    <h4 class="projetCard__info__titre" [title]="projet.titre">{{projet.titre}}</h4>
 
-    <p class="card-projet-info-presentation">{{projet.presentation}}</p>
+    <p class="projetCard__info__presentation">{{projet.presentation}}</p>
 
-    <div class="card-projet-info-technos">
-      <div class="card-projet-info-technos-techno" *ngFor="let techno of projet.technologies" [ngStyle]="{'background-image': 'url('+techno.image+')'}" [title]="techno.nom"></div>
+    <div class="projetCard__info__technos">
+      <div class="projetCard__info__technos__techno" *ngFor="let techno of projet.technologies" [ngStyle]="{'background-image': 'url('+techno.image+')'}" [title]="techno.nom"></div>
     </div>
   </div>
 </div>

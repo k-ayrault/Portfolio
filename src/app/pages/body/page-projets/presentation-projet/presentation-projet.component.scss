@@ -1,114 +1,154 @@
-.presentation-projet {
-  min-height: calc(100% - 4em);
-  width: 100%;
-  padding: 2em 0;
+/*  Présentation */
+$presentation-padding-tb: 2em;
+$presentation-padding-lr: 0;
+$presentation-height-min: calc(100% - 2 * $presentation-padding-tb);
+$presentation-width: 100%;
+$presentation-padding-tb-md: $presentation-padding-tb;
+$presentation-padding-tb-sm: $presentation-padding-tb;
+$presentation-padding-lr-sm: 50px;
+$presentation-width-sm: calc(100% - 2*$presentation-padding-lr-sm);
+
+/*  Bouton retour */
+$retour-padding: 1rem;
+$retour-border-radius: 10px;
+
+/*  Header  */
+$header-padding-t: 4rem;
+$header-padding-lr: 0;
+$header-padding-b: 2rem;
+$header-width: 100%;
+$header-childs-width: 100%;
+$header-infos-childs-margin-r: 1rem;
+
+/*  InfoItem  */
+$itemInfo-border-radius: 10px;
+$itemInfo-padding-tb: 5px;
+$itemInfo-padding-lr: 10px;
+$itemInfo-margin-r: 1rem;
+$itemInfo-bg-color: rgb(200,209,222);
+$itemInfo-logo-size: 25px;
+$itemInfo-logo-bg-size: 100%;
+$itemInfo-logo-margin-r:5px;
+
+/*  Footer  */
+$footer-width: 100%;
+$footer-childs-width: 100%;
+$footer-reseaux-margin-t: 2rem;
+
+.presentationProjet {
+  min-height: $presentation-height-min;
+  width: $presentation-width;
+  padding: $presentation-padding-tb $presentation-padding-lr;
 }
 
-.presentation-projet__retour {
-  padding: 1em;
-  border-radius: 10px;
+.presentationProjet__retour {
+  padding: $retour-padding;
+  border-radius: $retour-border-radius;
   background-color: black;
   color: white;
   text-decoration: none;
 }
 
-.presentation-projet__header {
-  padding: 4em 0 2em 0;
-  width: 100%;
+.presentationProjet__header {
+  padding: $header-padding-t $header-padding-lr $header-padding-b $header-padding-lr;
+  width: $header-width;
 }
 
-.presentation-projet__header__titre {
+.presentationProjet__header__titre {
   margin: 0;
 }
 
-.presentation-projet__header__infos,
-.presentation-projet__header__technos {
-  width: 100%;
+.presentationProjet__header__infos,
+.presentationProjet__header__technos {
+  width: $header-childs-width;
   display: flex;
   flex-wrap: wrap;
 }
 
 
-.presentation-projet__header__infos>* {
-  margin-right: 1em;
+.presentationProjet__header__infos > * {
+  margin-right: $header-infos-childs-margin-r;
 }
 
-.presentation-projet__header__infos__techos__techno,
-.presentation-projet__footer__reseaux__liste__item,
-.presentation-projet__footer__collaborateurs__liste__item {
+.presentationProjet__header__infos__techos__techno,
+.presentationProjet__footer__reseaux__liste__item,
+.presentationProjet__footer__collaborateurs__liste__item {
   display: flex;
   align-items: center;
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin-right: 1em;
-  background-color: rgb(200,209,222);
+  border-radius: $itemInfo-border-radius;
+  padding: $itemInfo-padding-tb $itemInfo-padding-lr;
+  margin-right: $itemInfo-margin-r;
+  background-color: $itemInfo-bg-color;
   font-weight: bold;
 }
 
-.presentation-projet__header__infos__techos__techno__logo,
-.presentation-projet__footer__reseaux__liste__item__logo,
-.presentation-projet__footer__collaborateurs__liste__item__img {
-  width: 25px;
-  height: 25px;
-  background-size: 100%;
+.presentationProjet__header__infos__techos__techno__logo,
+.presentationProjet__footer__reseaux__liste__item__logo,
+.presentationProjet__footer__collaborateurs__liste__item__img {
+  width: $itemInfo-logo-size;
+  height: $itemInfo-logo-size;
+  background-size: $itemInfo-logo-bg-size;
   background-position: center;
-  margin-right: 5px;
+  margin-right: $itemInfo-logo-margin-r;
 }
 
-.presentation-projet__header__infos__techos__techno__nom>p {
+.presentationProjet__header__infos__techos__techno__nom > p {
   margin: 0;
 }
 
 
-.presentation-projet__body {}
-
-.presentation-projet__body__contexte,
-.presentation-projet__body__description {
-  text-align: justify;
+.presentationProjet__body {
 }
 
-.presentation-projet__footer {
-  width: 100%;
+.presentationProjet__footer {
+  width: $footer-width;
 }
 
-.presentation-projet__footer__reseaux,
-.presentation-projet__footer__reseaux__liste,
-.presentation-projet__footer__collaborateurs,
-.presentation-projet__footer__collaborateurs__liste {
-  width: 100%;
+.presentationProjet__footer__reseaux,
+.presentationProjet__footer__reseaux__liste,
+.presentationProjet__footer__collaborateurs,
+.presentationProjet__footer__collaborateurs__liste {
+  width: $footer-childs-width;
 }
 
-.presentation-projet__footer__reseaux {
-  margin-top: 2em;
+.presentationProjet__footer__reseaux {
+  margin-top: $footer-reseaux-margin-t;
 }
 
-.presentation-projet__footer__reseaux__liste,
-.presentation-projet__footer__collaborateurs__liste {
+.presentationProjet__footer__reseaux__liste,
+.presentationProjet__footer__collaborateurs__liste {
   display: flex;
 }
 
-.presentation-projet__footer__reseaux__liste {
+.presentationProjet__footer__reseaux__liste {
   justify-content: center;
 }
 
-.presentation-projet__footer__reseaux__liste__item,
-.presentation-projet__footer__collaborateurs__liste__item {
+.presentationProjet__footer__reseaux__liste__item,
+.presentationProjet__footer__collaborateurs__liste__item {
   text-decoration: none;
   color: black;
 }
 
-.presentation-projet__footer__collaborateurs__liste__item {
+.presentationProjet__footer__collaborateurs__liste__item {
   font-weight: bold;
 }
 
-.presentation-projet__footer__collaborateurs__liste__item {
+.presentationProjet__footer__collaborateurs__liste__item {
   background-color: transparent;
 }
 
-.presentation-projet__footer__collaborateurs__liste__item__img-H {
-  background-image: url('../../../../../assets/Images/genre/male.svg');
+.presentationProjet__footer__collaborateurs__liste__item__img-H {
+  background-image: var(--svg-male);
 }
 
-.presentation-projet__footer__collaborateurs__liste__item__img-F {
-  background-image: url('../../../../../assets/Images/genre/female.svg');
+.presentationProjet__footer__collaborateurs__liste__item__img-F {
+  background-image: var(--svg-female);
+}
+
+@media (max-width: 576px) {
+  .presentationProjet {
+    padding: $presentation-padding-tb-sm $presentation-padding-lr-sm;
+    width: $presentation-width-sm;
+  }
 }

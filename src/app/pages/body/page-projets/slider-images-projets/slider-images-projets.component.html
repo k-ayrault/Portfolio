@@ -1,20 +1,20 @@
-<div class="presentation-projet__body__sliders">
+<div class="presentationProjet__body__sliders">
   <div class="presentation__body__sliders__fleches presentation__body__sliders__fleches__left"
        (click)="changeImage()"></div>
-  <div class="presentation-projet__body__sliders__images" (touchstart)="sauvegardePremiereTouche($event)" (touchmove)="swipeImage($event)">
-    <figure class="presentation-projet__body__sliders__images__image" *ngFor="let image of images; let i = index;"
+  <div class="presentationProjet__body__sliders__images" (touchstart)="sauvegardePremiereTouche($event)" (touchmove)="swipeImage($event)">
+    <figure class="presentationProjet__body__sliders__images__image" *ngFor="let image of images; let i = index;"
             [ngStyle]="{'background-image': 'url('+image+')' }"
-            [ngClass]="{'presentation-projet__body__sliders__slide-left': indexLeft.indexOf(i) > -1,
-      'presentation-projet__body__sliders__slide-right': indexRight.indexOf(i) > -1,
-      'presentation-projet__body__sliders__slide-active': i === indexActive }">
+            [ngClass]="{'presentationProjet__body__sliders__slide-left': indexLeft.indexOf(i) > -1,
+      'presentationProjet__body__sliders__slide-right': indexRight.indexOf(i) > -1,
+      'presentationProjet__body__sliders__slide-active': i === indexActive }">
     </figure>
   </div>
   <div class="presentation__body__sliders__fleches presentation__body__sliders__fleches__right"
       (click)="changeImage(true)"></div>
 
-  <div class="presentation-projet__body__sliders__dots">
-    <div class="presentation-projet__body__sliders__dots__dot" *ngFor="let image of images; let i = index;"
-         [ngClass]="{'presentation-projet__body__sliders__dots__dot-active' : i === indexActive }"
+  <div class="presentationProjet__body__sliders__dots">
+    <div class="presentationProjet__body__sliders__dots__dot" *ngFor="let image of images; let i = index;"
+         [ngClass]="{'presentationProjet__body__sliders__dots__dot-active' : i === indexActive }"
          [attr.data-idImage]="i" (click)="dotCliqueChangeImage($event)"></div>
   </div>
 </div>

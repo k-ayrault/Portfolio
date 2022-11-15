@@ -1,3 +1,44 @@
+/*  Bloc  */
+$bloc-padding:1rem;
+$bloc-width:calc(50% - 2*$bloc-padding);
+$bloc-width-lg:calc(100% - 2*$bloc-padding);
+$bloc-padding-lr-sm: 50px;
+$bloc-width-sm: calc(100% - 2*$bloc-padding-lr-sm);
+
+/*  Form  */
+$form-margin-t:1rem;
+$form-nomPrenom-width:100%;
+$form-nomPrenom-childs-spaceBetween: 2rem;
+$form-nomPrenom-childs-width:calc(50% - ($form-nomPrenom-childs-spaceBetween / 2));
+$form-label-padding-tb:5px;
+$form-input-border-px: 1px;
+$form-input-min-height:2rem;
+$form-input-padding:5px;
+$form-input-border-radius: 10px;
+$form-input-margin-b: 5px;
+
+/*  Submit  */
+$submit-width:200px;
+$submit-height:3rem;
+$submit-margin-t:10px;
+
+/*  Données  */
+$donnes-height:1.5rem;
+$donnes-margin-r:10px;
+
+/*  Données  */
+$donnees-logo-width-height:1.3rem;
+$donnees-logo-margin-r:5px;
+
+/*  Réseaux */
+$reseaux-margin-t:20px;
+$reseaux-width:100%;
+$reseaux-gap:25px;
+$reseaux-logo-width-height:35px;
+
+/*  MailSend  */
+$mailSend-svg-width-height:100px;
+
 .contentContact {
   width: 100%;
   display: flex;
@@ -7,26 +48,26 @@
 .contentContact__infos,
 .contentContact__form,
 .contentContact__mailSend {
-  width: calc(50% - 2em);
-  padding: 1em;
+  padding: $bloc-padding;
+  width: $bloc-width;
   display: flex;
   flex-direction: column;
   align-self: center;
 }
 
 .contentContact__form {
-  margin-top: 1em;
+  margin-top: $form-margin-t;
 }
 
 .contentContact__form__nomPrenom {
-  width: 100%;
+  width: $form-nomPrenom-width;
   display: flex;
   justify-content: space-between;
 }
 
 .contentContact__form__nomPrenom__nom,
 .contentContact__form__nomPrenom__prenom {
-  width: calc(50% - 1em);
+  width: $form-nomPrenom-childs-width;
 }
 
 .contentContact__form__input {
@@ -36,29 +77,28 @@
 
 .contentContact__form__input>label {
   font-weight: bold;
-  padding: 5px 0;
+  padding: $form-label-padding-tb 0;
 }
 
 .contentContact__form__input>input,
 .contentContact__form__input>textarea {
-  border: 1px solid  rgb(200,209,222);
-  border-radius: 10px;
-  min-height: 2em;
-  padding: 5px;
-  margin-bottom: 5px;
+  border: $form-input-border-px solid  var(--header-bg);
+  border-radius: $form-input-border-radius;
+  min-height: $form-input-min-height;
+  padding: $form-input-padding;
+  margin-bottom: $form-input-margin-b;
 }
 
 .contentContact__form__submit {
-  font-size: 1em;
   font-weight: bold;
   align-self: center;
-  width: 200px;
-  height: 3em;
-  background-color: rgb(200,209,222);
+  width: $submit-width;
+  height: $submit-height;
+  background-color: var(--header-bg);
   color: black;
   border: none;
-  border-radius: 10px;
-  margin-top: 10px;
+  border-radius: $form-input-border-radius;
+  margin-top: $submit-margin-t;
   cursor: pointer;
 }
 
@@ -72,7 +112,7 @@
 }
 
 .contentContact__form__legendes__legende {
-  margin: 5px;
+  margin: $form-margin-t;
   font-size: 0.9em;
 }
 
@@ -92,30 +132,30 @@
   align-items: center;
   text-decoration: none;
   color: black;
-  height: 1.5em;
-  margin: 0 10px 0 0;
+  height: $donnes-height;
+  margin: 0 $donnes-margin-r 0 0;
 }
 
 .contentContact__infos__infosContact__logo {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 5px;
+  width: $donnees-logo-width-height;
+  height: $donnees-logo-width-height;
+  margin-right: $donnees-logo-margin-r;
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center;
 }
 
 .contentContact__infos__reseaux {
-  margin-top: 20px;
-  width: 100%;
+  margin-top: $reseaux-margin-t;
+  width: $reseaux-width;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: $reseaux-gap;
 }
 
 .contentContact__infos__reseaux__reseau {
-  width: 35px;
-  height: 35px;
+  width: $reseaux-logo-width-height;
+  height: $reseaux-logo-width-height;
 }
 
 .contentContact__infos__reseaux__reseau__lien {
@@ -128,12 +168,12 @@
 }
 
 .contentContact__mailSend__svg {
-  width: 100px;
-  height: 100px;
+  width: $mailSend-svg-width-height;
+  height: $mailSend-svg-width-height;
   align-self: center;
-  background-image: url("../../../../assets/Images/icones/success.svg");
+  background-image: var(--svg-success);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 90%;
   background-position: center;
 
 }
@@ -154,26 +194,22 @@
 
   .contentContact__form,
   .contentContact__mailSend {
-    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid var(--border-top-separation-responsive-color);
   }
 
   .contentContact__infos,
   .contentContact__form,
   .contentContact__mailSend {
-    width: calc(100% - 2em);
-  }
-
-  .contentContact__form {
-    border-top: 1px solid rgb(200,209,222);
+    width: $bloc-width-lg;
   }
 }
 
 @media (max-width: 768px) {
-  .body {
-    padding: 0;
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 576px) {
+  .contentContact {
+    padding : 0 $bloc-padding-lr-sm;
+    width: $bloc-width-sm;
+  }
 }

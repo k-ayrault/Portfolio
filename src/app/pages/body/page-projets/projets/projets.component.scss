@@ -1,27 +1,75 @@
-#projets {
+$nombre-projets-par-ligne: 3;
+$nombre-projets-par-ligne-xl:2;
+$nombre-projets-par-ligne-sm:1;
+
+$projets-width:100%;
+$projets-padding-tb-md: 0;
+$projets-padding-tb-sm: 0;
+$projets-padding-lr-sm: 50px;
+$projets-width-sm: calc(100% - 2*$projets-padding-lr-sm);
+
+$projets-titre-width:100%;
+$projets-titre-padding-tb: 2rem;
+$projets-titre-padding-lr: 0;
+$projets-liste-gap: 1rem;
+$projets-liste-projet-width: calc((100% / $nombre-projets-par-ligne) - $projets-liste-gap);
+$projets-liste-projet-width-xl: calc((100% / $nombre-projets-par-ligne-xl) - $projets-liste-gap);
+$projets-liste-projet-width-sm: calc((100% / $nombre-projets-par-ligne-sm) - $projets-liste-gap);
+$projets-liste-projet-height: 250px;
+$projets-liste-projet-height-xl: 200px;
+$projets-liste-projet-height-sm: 200px;
+$projets-liste-projet-border-px:1px;
+$projets-liste-projet-border-color:rgb(0,0,0,0.25);
+$projets-liste-projet-border-radius:10px;
+
+.projetsContent {
+  min-height: 100%;
   height: 100%;
+  width: $projets-width;
 }
 
-.title-projet {
+.projetsContent__titre {
   width: 100%;
   text-align: center;
-  padding: 2em 0;
+  padding: $projets-titre-padding-tb $projets-titre-padding-lr;
 }
 
-.title-projet>h1 {
+.projetsContent__titre > h1 {
   margin: 0;
 }
 
-.liste-projets {
+.projetsContent__liste {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  gap:$projets-liste-gap;
 }
 
-.liste-projets>.choice-projet {
-  margin: 0.5em;
-  width: calc((100% / 3) - 1.2em);
-  height: 250px;
-  border: 1px solid rgb(0,0,0,0.25);
-  border-radius: 10px;
+.projetsContent__liste > .projetsContent__liste__projet {
+  width: $projets-liste-projet-width;
+  height: $projets-liste-projet-height;
+  border: $projets-liste-projet-border-px solid $projets-liste-projet-border-color;
+  border-radius: $projets-liste-projet-border-radius;
 }
+
+@media (max-width: 1200px) {
+  .projetsContent__liste > .projetsContent__liste__projet {
+    width: $projets-liste-projet-width-xl;
+    height: $projets-liste-projet-height-xl;
+  }
+}
+
+@media (max-width: 576px) {
+  .projetsContent {
+    padding: $projets-padding-tb-sm $projets-padding-lr-sm;
+    width: $projets-width-sm;
+  }
+  .projetsContent__liste {
+    justify-content: center;
+  }
+  .projetsContent__liste > .projetsContent__liste__projet {
+    width: $projets-liste-projet-width-sm;
+    height: $projets-liste-projet-height-sm;
+  }
+}
+

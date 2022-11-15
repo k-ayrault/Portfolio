@@ -1,17 +1,17 @@
 .header {
   max-width: 100vw;
-  height: 7vh;
-  padding: 3vh 0;
+  height: var(--header-height);
+  padding: var(--header-padding-tb) 0;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: rgb(200,209,222);
+  background-color: var(--header-bg);
 }
 
 .body {
-  padding: 0 25vw;
-  max-width: 50vw;
-  min-height:  var(--body-height-min-lg);
+  padding: 0 var(--body-padding-lr);
+  max-width: var(--body-width);
+  min-height:  var(--body-height-min);
   max-height: fit-content;
 }
 
@@ -25,23 +25,26 @@
 
 @media (max-width: 992px) {
   .header {
-    padding: 1vh 0;
-    height: 7vh;
+    padding: var(--header-padding-tb-lg) 0;
   }
 
   .body {
-    min-height: calc(100vh - (7vh) - 2vh);
+    min-height: var(--body-height-min-lg);
   }
 
 }
 
 @media (max-width: 768px) {
   .body {
-    padding: 0;
-    max-width: 100%;
+    padding: 0  var(--body-padding-lr-md);
+    max-width: var(--body-width-md);
   }
 }
 
 @media (max-width: 576px) {
+  .body {
+    padding: 0 0;
+    max-width: var(--body-width-sm);
+  }
 }
 

@@ -1,11 +1,11 @@
-<article class="presentation-projet">
-  <a routerLink="/projets" class="presentation-projet__retour">Retour aux projets</a>
+<article class="presentationProjet">
+  <a routerLink="/projets" class="presentationProjet__retour">Retour aux projets</a>
 
-  <header class="presentation-projet__header">
-    <h1 class="presentation-projet__header__titre">{{projet.titre}}</h1>
+  <header class="presentationProjet__header">
+    <h1 class="presentationProjet__header__titre">{{projet.titre}}</h1>
 
-    <div class="presentation-projet__header__infos">
-      <div class="presentation-projet__header__infos__dates">
+    <div class="presentationProjet__header__infos">
+      <div class="presentationProjet__header__infos__dates">
         <p>
           📅 {{projet.debut | date: 'YYYY'}}
           <span *ngIf="projet.fin && projet.fin.getFullYear() > projet.debut.getFullYear()">
@@ -13,54 +13,54 @@
           </span>
         </p>
       </div>
-      <div class="presentation-projet__header__infos__entreprise">
+      <div class="presentationProjet__header__infos__entreprise">
         <p>
           🏢 {{ projet.entreprise }}
         </p>
       </div>
     </div>
 
-    <div class="presentation-projet__header__technos">
-      <div class="presentation-projet__header__infos__techos__techno" *ngFor="let techno of projet.technologies">
-        <div class="presentation-projet__header__infos__techos__techno__logo"
+    <div class="presentationProjet__header__technos">
+      <div class="presentationProjet__header__infos__techos__techno" *ngFor="let techno of projet.technologies">
+        <div class="presentationProjet__header__infos__techos__techno__logo"
              [ngStyle]="{'background-image': 'url('+ techno.image +')'}">
         </div>
-        <div class="presentation-projet__header__infos__techos__techno__nom">
+        <div class="presentationProjet__header__infos__techos__techno__nom">
           <p>{{techno.nom}}</p>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="presentation-projet__body">
-    <section class="presentation-projet__body__contexte" >
+  <div class="presentationProjet__body">
+    <section class="presentationProjet__body__contexte" >
       <p [innerHTML]="projet.contexte"></p>
     </section>
 
     <app-slider-images-projets *ngIf="projet.images.length > 0" [images]="projet.images"></app-slider-images-projets>
 
 
-    <section class="presentation-projet__body__description">
+    <section class="presentationProjet__body__description">
       <p [innerHTML]="projet.description"></p>
     </section>
 
   </div>
 
-  <footer class="presentation-projet__footer">
-    <div class="presentation-projet__footer__collaborateurs" *ngIf="projet.collaborateurs.length > 0">
+  <footer class="presentationProjet__footer">
+    <div class="presentationProjet__footer__collaborateurs" *ngIf="projet.collaborateurs.length > 0">
       <h2>Collaborateurs</h2>
-      <div class="presentation-projet__footer__collaborateurs__liste">
-        <a class="presentation-projet__footer__collaborateurs__liste__item" *ngFor="let collaborateur of projet.collaborateurs" [href]="collaborateur.site" target="_blank" [ngStyle]="{'pointer-events': collaborateur.site ? 'auto' : 'none' }">
-          <div class="presentation-projet__footer__collaborateurs__liste__item__img"
-               [ngClass]="{'presentation-projet__footer__collaborateurs__liste__item__img-H': collaborateur.genre === 'H','presentation-projet__footer__collaborateurs__liste__item__img-F': collaborateur.genre === 'F' } "></div>
+      <div class="presentationProjet__footer__collaborateurs__liste">
+        <a class="presentationProjet__footer__collaborateurs__liste__item" *ngFor="let collaborateur of projet.collaborateurs" [href]="collaborateur.site" target="_blank" [ngStyle]="{'pointer-events': collaborateur.site ? 'auto' : 'none' }">
+          <div class="presentationProjet__footer__collaborateurs__liste__item__img"
+               [ngClass]="{'presentationProjet__footer__collaborateurs__liste__item__img-H': collaborateur.genre === 'H','presentationProjet__footer__collaborateurs__liste__item__img-F': collaborateur.genre === 'F' } "></div>
           {{ collaborateur.nom | uppercase }} {{ collaborateur.prenom | titlecase }}
         </a>
       </div>
     </div>
-    <div class="presentation-projet__footer__reseaux" *ngIf="projet.reseaux.length > 0">
-      <div class="presentation-projet__footer__reseaux__liste">
-        <a class="presentation-projet__footer__reseaux__liste__item" *ngFor="let reseau of projet.reseaux" [href]="reseau.lien" target="_blank">
-            <div class="presentation-projet__footer__reseaux__liste__item__logo" [ngStyle]="{ 'background-image': 'url('+reseau.img+')' }"></div>
+    <div class="presentationProjet__footer__reseaux" *ngIf="projet.reseaux.length > 0">
+      <div class="presentationProjet__footer__reseaux__liste">
+        <a class="presentationProjet__footer__reseaux__liste__item" *ngFor="let reseau of projet.reseaux" [href]="reseau.lien" target="_blank">
+            <div class="presentationProjet__footer__reseaux__liste__item__logo" [ngStyle]="{ 'background-image': 'url('+reseau.img+')' }"></div>
             {{ reseau.nom }}
         </a>
       </div>
