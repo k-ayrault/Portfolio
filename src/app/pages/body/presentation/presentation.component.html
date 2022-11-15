@@ -59,6 +59,6 @@
   <div class="presentation__descr">
     <h1>À propos</h1>
     <p>{{ personne.situation }}</p>
-    <p>{{ personne.description }}</p>
+    <p [innerHTML]="personne.description"></p>
   </div>
 </div>
